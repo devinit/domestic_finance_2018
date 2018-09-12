@@ -16,17 +16,17 @@ import pdb
 
 #Parse Options
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default = "./example.xlsx",
+parser.add_option("-i", "--input", dest="input", default="../project_data/example.xlsx",
                 help="Input file", metavar="FILE")
-parser.add_option("-o", "--output", dest="output", default="./results.csv",
+parser.add_option("-o", "--output", dest="output", default="../output/results.csv",
                 help="Output CSV file", metavar="FILE")
-parser.add_option("-j", "--outputjson", dest="outputjson", default="./results.json",
+parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json",
                 help="Output json file", metavar="FILE")
 parser.add_option("-d", "--dict", dest="dict", default="./orgDict.json",
                 help="orgDict JSON file", metavar="FILE")
 (options, args) = parser.parse_args()
 
-#Unicode print
+# Unicode print
 def uni(input):
     if input is not None:
         try:
@@ -36,10 +36,11 @@ def uni(input):
         return output
     return None
 
-#Import xlsx data
+# Import xlsx data
+dir_path = os.path.dirname(os.path.realpath(__file__))
 inPath = options.input
 try:
-    wb = load_workbook(filename = inPath, read_only = True, data_only=True)
+    wb = load_workbook(filename = os.path.join(dir_path, inPath), read_only = True, data_only=True)
 except:
     raise Exception("Input xlsx path required!")
 sheets = wb.get_sheet_names()
@@ -74,7 +75,7 @@ budgetDict[None] = ""
 
 #Define hierarchy
 try:
-    with open(options.dict, 'r') as f:
+    with open(os.path.join(dir_path, options.dict), 'r') as f:
          orgDict = json.load(f)
 except:
     orgDict = {}
@@ -485,12 +486,12 @@ print('Writing CSV...')
 #Enforce order
 #keys = flatData[0].keys()
 keys = ['country','iso','year','currency','type','l1','l2','l3','l4','l5','l6','value']
-with open(options.output, 'w') as output_file:
+with open(os.path.join(dir_path, options.output), 'w') as output_file:
     dict_writer = csv.DictWriter(output_file, keys)
     dict_writer.writeheader()
     dict_writer.writerows(flatData)
 print('Done.')
-print('Writing JSON...')
-with open(options.outputjson, 'w') as output_file:
-    json.dump(hierData,output_file,ensure_ascii=False,indent=2)
-print('Done.')
+# print('Writing JSON...')
+# with open(options.outputjson, 'w') as output_file:
+#     json.dump(hierData,output_file,ensure_ascii=False,indent=2)
+# print('Done.')
