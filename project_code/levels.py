@@ -10,8 +10,55 @@ parser = OptionParser()
 parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
-parser.add_option("-d", "--dict", dest="dict", default="./orgDict.json", help="orgDict JSON file", metavar="FILE")
 (options, args) = parser.parse_args()
+
+
+# Temporary subset
+completed_countries = [
+    "Afghanistan",
+    "Angola",
+    "Bangladesh",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Central African Republic",
+    "Chad",
+    "Congo, Republic of",
+    "DRC",
+    "Eritrea",
+    "Ethiopia",
+    "Gambia, The",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Haiti",
+    "Kenya",
+    "Lesotho",
+    "Liberia",
+    "Madagascar",
+    "Malawi",
+    "Mali",
+    "Micronesia",
+    "Mozambique",
+    "Nepal",
+    "Niger",
+    "Nigeria",
+    "Pakistan",
+    "Papua New Guinea",
+    "Rwanda",
+    "Senegal",
+    "Somalia",
+    "South Sudan",
+    "Sudan",
+    "Tanzania",
+    "Togo",
+    "Uganda",
+    "Zambia"
+]
 
 
 def float_if_possible(test_input):
@@ -19,7 +66,7 @@ def float_if_possible(test_input):
     if test_input is not None:
         try:
             output = float(test_input)
-        except:
+        except ValueError:
             output = re.sub(r'[^a-zA-Z0-9-_\s]', '', test_input).strip()
         return output
     return None
@@ -61,141 +108,81 @@ budgetDict["Staff"] = "proj"
 budgetDict[""] = ""
 budgetDict[None] = ""
 
-try:
-    with open(os.path.join(dir_path, options.dict), 'r') as f:
-        orgDict = json.load(f)
-except:
-    orgDict = {}
 flatData = []
 hierData = {"name": "budget", "children": []}
 for sheet in sheets:
-    ws = wb[sheet]
-    rowIndex = 0
-    oldNames = []
-    names = []
-    levels = []
-    years = []
-    types = []
-    values = []
-    country = float_if_possible(sheet)
-    print('Reading sheet: '+country)
-    for row in ws.iter_rows():
-        names.append(row[0].value)
-        oldNames.append(row[1].value)
-        levels.append(row[2].value)
-        colLen = len(row)
-        if str(row[1].value).lower() == "year":
-            for i in range(3, colLen):
-                val = float_if_possible(row[i].value)
-                if str(val).lower() != 'none':
-                    years.append(val)
-        if str(row[1].value).lower() == "type":
-            for i in range(3, colLen):
-                val = float_if_possible(row[i].value)
-                types.append(val)
-        if rowIndex >= 5:
-            rowValues = []
-            for i in range(3, colLen):
-                val = float_if_possible(row[i].value)
-                rowValues.append(val)
-            values.append(rowValues)
-        rowIndex += 1
-    currency = oldNames[1]
-    iso = names[0]
-    names = names[5:]
-    levels = levels[5:]
-    nameLen = len(names)
-    yearLen = len(years)
-    for i in range(0, nameLen):
-        name = names[i]
-        level = str(levels[i])
-        levelSlug = level
-        if level.lower().find('l0') > -1:
-            for j in range(0, yearLen):
-                item = {}
-                year = years[j]
-                yearType = types[j]
-                item['iso'] = iso
-                item['country'] = country
-                item['currency'] = currency
-                item['year'] = year
-                item['type'] = budgetDict[yearType]
-                item['l1'] = name
-                item['l2'] = ""
-                item['l3'] = ""
-                item['l4'] = ""
-                item['l5'] = ""
-                item['l6'] = ""
-                try:
-                    item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
-                except IndexError:
-                    item['value'] = ""
-                if budgetDict[yearType] != "":
-                    flatData.append(item)
-        elif level != 'none' and level != 'None':
-            for j in range(0, yearLen):
-                item = {}
-                year = years[j]
-                yearType = types[j]
-                try:
-                    levelDict = orgDict[country][levelSlug]
-                except:
-                    print("Please define '"+level+"' in the sheet named '"+country+"':")
-                    if country not in orgDict:
-                        orgDict[country] = {}
-                    orgDict[country][levelSlug] = {}
-                    if levelSlug[0:2].lower() == "l1":
-                        orgDict[country][levelSlug]['l1'] = str(input('L1:')).strip()
-                        orgDict[country][levelSlug]['l2'] = ""
-                        orgDict[country][levelSlug]['l3'] = ""
-                        orgDict[country][levelSlug]['l4'] = ""
-                        orgDict[country][levelSlug]['l5'] = ""
-                    elif levelSlug[0:2].lower() == "l2":
-                        orgDict[country][levelSlug]['l1'] = str(input('L1:')).strip()
-                        orgDict[country][levelSlug]['l2'] = str(input('L2:')).strip()
-                        orgDict[country][levelSlug]['l3'] = ""
-                        orgDict[country][levelSlug]['l4'] = ""
-                        orgDict[country][levelSlug]['l5'] = ""
-                    elif levelSlug[0:2].lower() == "l3":
-                        orgDict[country][levelSlug]['l1'] = str(input('L1:')).strip()
-                        orgDict[country][levelSlug]['l2'] = str(input('L2:')).strip()
-                        orgDict[country][levelSlug]['l3'] = str(input('L3:')).strip()
-                        orgDict[country][levelSlug]['l4'] = ""
-                        orgDict[country][levelSlug]['l5'] = ""
-                    elif levelSlug[0:2].lower() == "l4":
-                        orgDict[country][levelSlug]['l1'] = str(input('L1:')).strip()
-                        orgDict[country][levelSlug]['l2'] = str(input('L2:')).strip()
-                        orgDict[country][levelSlug]['l3'] = str(input('L3:')).strip()
-                        orgDict[country][levelSlug]['l4'] = str(input('L4:')).strip()
-                        orgDict[country][levelSlug]['l5'] = ""
-                    else:
-                        orgDict[country][levelSlug]['l1'] = str(input('L1:')).strip()
-                        orgDict[country][levelSlug]['l2'] = str(input('L2:')).strip()
-                        orgDict[country][levelSlug]['l3'] = str(input('L3:')).strip()
-                        orgDict[country][levelSlug]['l4'] = str(input('L4:')).strip()
-                        orgDict[country][levelSlug]['l5'] = str(input('L5:')).strip()
-                    levelDict = orgDict[country][levelSlug]
-                    print('Writing orgDict...')
-                    with open(os.path.join(dir_path, options.dict), 'w') as output_file:
-                        json.dump(orgDict, output_file, ensure_ascii=False, sort_keys=True, indent=2)
-                    print('Done.')
-                item['iso'] = iso
-                item['country'] = country
-                item['currency'] = currency
-                item['year'] = year
-                item['type'] = budgetDict[yearType]
-                item['l1'] = levelDict['l1']
-                item['l2'] = name if level.lower().find('l1') > -1 else levelDict['l2']
-                item['l3'] = name if level.lower().find('l2') > -1 else levelDict['l3']
-                item['l4'] = name if level.lower().find('l3') > -1 else levelDict['l4']
-                item['l5'] = name if level.lower().find('l4') > -1 else levelDict['l5']
-                item['l6'] = name if level.lower().find('l5') > -1 else ""
-                try:
-                    item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
-                except IndexError:
-                    item['value'] = ""
-                if budgetDict[yearType] != "":
-                    flatData.append(item)
+    if sheet in completed_countries:
+        levelDict = {}
+        levelDict[1] = ""
+        levelDict[2] = ""
+        levelDict[3] = ""
+        levelDict[4] = ""
+        levelDict[5] = ""
+        levelDict[6] = ""
+        ws = wb[sheet]
+        rowIndex = 0
+        oldNames = []
+        names = []
+        levels = []
+        years = []
+        types = []
+        values = []
+        country = sheet
+        print('Reading sheet: '+country)
+        for row in ws.iter_rows():
+            names.append(row[0].value)
+            oldNames.append(row[1].value)
+            levels.append(row[2].value)
+            colLen = len(row)
+            if str(row[1].value).lower() == "year":
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    if str(val).lower() != 'none':
+                        years.append(val)
+            if str(row[1].value).lower() == "type":
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    types.append(val)
+            if rowIndex >= 5:
+                rowValues = []
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    rowValues.append(val)
+                values.append(rowValues)
+            rowIndex += 1
+        currency = oldNames[1]
+        iso = names[0]
+        names = names[5:]
+        levels = levels[5:]
+        nameLen = len(names)
+        yearLen = len(years)
+        for i in range(0, nameLen):
+            name = names[i]
+            level = str(levels[i])
+            if level.lower() != 'none':
+                for j in range(0, yearLen):
+                    item = {}
+                    year = years[j]
+                    yearType = types[j]
+                    level_rank = int(level[1:2])+1
+                    levelDict[level_rank] = name
+                    item['iso'] = iso
+                    item['country'] = country
+                    item['currency'] = currency
+                    item['year'] = year
+                    item['type'] = budgetDict[yearType]
+                    item['l1'] = levelDict[1]
+                    item['l2'] = name if level_rank == 2 else levelDict[2]
+                    item['l3'] = name if level_rank == 3 else levelDict[3]
+                    item['l4'] = name if level_rank == 4 else levelDict[4]
+                    item['l5'] = name if level_rank == 5 else levelDict[5]
+                    item['l6'] = name if level_rank == 6 else ""
+                    try:
+                        item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
+                    except IndexError:
+                        item['value'] = ""
+                    if budgetDict[yearType] != "":
+                        flatData.append(item)
 
 print('Writing CSV...')
 keys = ['country', 'iso', 'year', 'currency', 'type', 'l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'value']
