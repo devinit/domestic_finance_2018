@@ -109,6 +109,7 @@ budgetDict["Staff"] = "proj"
 budgetDict[""] = ""
 budgetDict[None] = ""
 
+orgDict = {}
 flatData = []
 hierData = {"name": "budget", "children": []}
 for sheet in sheets:
@@ -129,6 +130,7 @@ for sheet in sheets:
         types = []
         values = []
         country = sheet
+        orgDict[country] = {}
         print('Reading sheet: '+country)
         for row in ws.iter_rows():
             names.append(row[0].value)
@@ -167,6 +169,7 @@ for sheet in sheets:
                     yearType = types[j]
                     level_rank = int(level[1:2])+1
                     levelDict[level_rank] = name
+                    orgDict[country][level] = levelDict
                     item['iso'] = iso
                     item['country'] = country
                     item['currency'] = currency
@@ -184,7 +187,10 @@ for sheet in sheets:
                         item['value'] = ""
                     if budgetDict[yearType] != "":
                         flatData.append(item)
-
+print('Writing orgDict...')
+with open(os.path.join(dir_path, options.dict), 'w') as output_file:
+    json.dump(orgDict, output_file, ensure_ascii=False, sort_keys=True, indent=2)
+print('Done.')
 print('Writing CSV...')
 keys = ['country', 'iso', 'year', 'currency', 'type', 'l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'value']
 with open(os.path.join(dir_path, options.output), 'w') as output_file:
