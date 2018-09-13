@@ -4,13 +4,14 @@ import json
 from openpyxl import load_workbook
 import os
 from optparse import OptionParser
+import copy
 
 # Parse Options
 parser = OptionParser()
 parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
-parser.add_option("-d", "--dict", dest="dict", default="./orgDict.json", help="orgDict JSON file", metavar="FILE")
+parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json", help="orgDict JSON file", metavar="FILE")
 (options, args) = parser.parse_args()
 
 
@@ -24,15 +25,15 @@ completed_countries = [
     "Bolivia",
     "Burkina Faso",
     "Burundi",
-    "Cabo Verde",
+    "Cape Verde",
     "Cambodia",
     "Central African Republic",
     "Chad",
-    "Congo, Republic of",
-    "DRC",
+    "Congo Rep.",
+    "Democratic Republic of Congo",
     "Eritrea",
     "Ethiopia",
-    "Gambia, The",
+    "Gambia",
     "Ghana",
     "Guinea",
     "Guinea-Bissau",
@@ -113,14 +114,14 @@ orgDict = {}
 flatData = []
 hierData = {"name": "budget", "children": []}
 for sheet in sheets:
-    if sheet in completed_countries:
+    if sheet.strip() in completed_countries:
         levelDict = {}
-        levelDict[1] = ""
-        levelDict[2] = ""
-        levelDict[3] = ""
-        levelDict[4] = ""
-        levelDict[5] = ""
-        levelDict[6] = ""
+        levelDict['l1'] = ""
+        levelDict['l2'] = ""
+        levelDict['l3'] = ""
+        levelDict['l4'] = ""
+        levelDict['l5'] = ""
+        levelDict['l6'] = ""
         ws = wb[sheet]
         rowIndex = 0
         oldNames = []
@@ -129,7 +130,7 @@ for sheet in sheets:
         years = []
         types = []
         values = []
-        country = sheet
+        country = sheet.strip()
         orgDict[country] = {}
         print('Reading sheet: '+country)
         for row in ws.iter_rows():
@@ -159,28 +160,37 @@ for sheet in sheets:
         levels = levels[5:]
         nameLen = len(names)
         yearLen = len(years)
+
         for i in range(0, nameLen):
-            name = names[i]
-            level = str(levels[i])
-            if level.lower() != 'none':
+            name = str(names[i]).strip()
+            level = str(levels[i]).lower().strip()
+            if level != 'none':
                 for j in range(0, yearLen):
                     item = {}
                     year = years[j]
                     yearType = types[j]
+                    try:
+                        levelDict = orgDict[country][level]
+                    except KeyError:
+                        pass
                     level_rank = int(level[1:2])+1
-                    levelDict[level_rank] = name
-                    orgDict[country][level] = levelDict
+                    levelDict['l'+str(level_rank)] = name
+                    item['l1'] = levelDict['l1']
+                    item['l2'] = levelDict['l2'] if level_rank >= 2 else ""
+                    item['l3'] = levelDict['l3'] if level_rank >= 3 else ""
+                    item['l4'] = levelDict['l4'] if level_rank >= 4 else ""
+                    item['l5'] = levelDict['l5'] if level_rank >= 5 else ""
+                    item['l6'] = levelDict['l6'] if level_rank >= 6 else ""
+
+                    if level != "l0":
+                        item_copy = copy.deepcopy(item)
+                        item_copy['l'+str(level_rank)] = ""
+                        orgDict[country][level] = item_copy
                     item['iso'] = iso
                     item['country'] = country
                     item['currency'] = currency
                     item['year'] = year
                     item['type'] = budgetDict[yearType]
-                    item['l1'] = levelDict[1]
-                    item['l2'] = name if level_rank == 2 else levelDict[2]
-                    item['l3'] = name if level_rank == 3 else levelDict[3]
-                    item['l4'] = name if level_rank == 4 else levelDict[4]
-                    item['l5'] = name if level_rank == 5 else levelDict[5]
-                    item['l6'] = name if level_rank == 6 else ""
                     try:
                         item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
                     except IndexError:

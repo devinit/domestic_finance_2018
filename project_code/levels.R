@@ -1,5 +1,50 @@
-wd <- "~/git/alexm-util/DevInit/budgetLevels"
+wd <- "~/git/domestic_finance_2018/output"
 setwd(wd)
+completed_countries = c(
+  "Afghanistan",
+  "Angola",
+  "Bangladesh",
+  "Benin",
+  "Bhutan",
+  "Bolivia",
+  "Burkina Faso",
+  "Burundi",
+  "Cape Verde",
+  "Cambodia",
+  "Central African Republic",
+  "Chad",
+  "Congo Rep.",
+  "Democratic Republic of Congo",
+  "Eritrea",
+  "Ethiopia",
+  "Gambia",
+  "Ghana",
+  "Guinea",
+  "Guinea-Bissau",
+  "Haiti",
+  "Kenya",
+  "Lesotho",
+  "Liberia",
+  "Madagascar",
+  "Malawi",
+  "Mali",
+  "Micronesia",
+  "Mozambique",
+  "Nepal",
+  "Niger",
+  "Nigeria",
+  "Pakistan",
+  "Papua New Guinea",
+  "Rwanda",
+  "Senegal",
+  "Somalia",
+  "South Sudan",
+  "Sudan",
+  "Tanzania",
+  "Togo",
+  "Uganda",
+  "Zambia"
+)
 df <- read.csv("./results.csv"
                , header = TRUE
                ,sep=","
