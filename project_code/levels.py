@@ -155,7 +155,7 @@ for sheet in sheets:
                 values.append(rowValues)
             rowIndex += 1
         currency = oldNames[1]
-        iso = names[0]
+        iso = str(names[0]).strip()
         names = names[5:]
         levels = levels[5:]
         nameLen = len(names)
