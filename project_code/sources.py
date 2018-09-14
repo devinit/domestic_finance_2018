@@ -1,79 +1,72 @@
-#!/usr/bin/env python
-
-#Import system
-import openpyxl
 import csv
-import re
 from openpyxl import load_workbook
-import sys, os
+import os
 from optparse import OptionParser
 import pdb
 
-#Parse Options
 parser = OptionParser()
-#parser.add_option("-i", "--input", dest="input", default = "S:/Projects/Programme resources/Data/Data sets/Domestic Government Expenditure/Government budgets/Final data government finance_VA100415_originalnetlending.xlsx",
-parser.add_option("-i", "--input", dest="input", default = "D:/Documents/Gov finance/Final data government finance_KB300117.xlsx",
-                help="Input file", metavar="FILE")
-parser.add_option("-o", "--output", dest="output", default="./domestic-sources.csv",
-                help="Output CSV file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-o", "--output", dest="output", default="../output/domestic-sources.csv", help="Output CSV file", metavar="FILE")
 (options, args) = parser.parse_args()
 
-#Unicode print
-def uni(input):
-    output = str(unicode(input).encode(sys.stdout.encoding, 'replace'))
-    return output
-
-#Import xlsx data
+dir_path = os.path.dirname(os.path.realpath(__file__))
 inPath = options.input
-wb = load_workbook(filename = inPath, data_only=True)
-sheets = wb.get_sheet_names()
+try:
+    wb = load_workbook(filename=os.path.join(dir_path, inPath))
+except:
+    raise Exception("Input xlsx path required!")
+sheets = wb.sheetnames
 
 sources = []
 for sheet in sheets:
-    ws = wb.get_sheet_by_name(name=sheet)
-    country = uni(sheet)
+    ws = wb[sheet]
+    country = sheet.strip()
     iso = ""
     yearCols = {}
     print('Reading sheet: '+country)
-    for row in ws.rows:
+    for row in ws.iter_rows():
         colLen = len(row)
-        if row[0].column=="A" and row[0].row==1:
-            iso = uni(row[0].value)
-        if uni(row[1].value).lower() == "year":
-            for i in range(3,colLen):
-                val = uni(row[i].value)
-                col = row[i].column
-                if str(val).lower()!='none':
-                    yearCols[col]=val
+        if hasattr(row[0], "column"):
+            if row[0].column == "A" and row[0].row == 1:
+                iso = row[0].value
+            if str(row[1].value).lower() == "year":
+                for i in range(3, colLen):
+                    if hasattr(row[i], "column"):
+                        val = str(row[i].value).strip()
+                        col = row[i].column
+                        if val.lower() != 'none':
+                            yearCols[col] = val
         for cell in row:
             if cell.value:
-                if uni(cell.value).strip().lower()=="source":
+                if str(cell.value).strip().lower() == "source":
                     try:
                         comment = cell.comment
-                    except:
+                    except AttributeError:
                         comment = False
                     if comment:
-                        year = yearCols[cell.column]
-                        obj = {}
-                        obj['id']=iso
-                        obj['year']=uni(year)
-                        obj['comment']=uni(comment.content.replace("\n"," "))
-                        obj['pub-date']=""
                         try:
-                            obj['pub-url']=obj['comment'][obj['comment'].lower().index("http"):].strip()
-                        except:
-                            obj['pub-url']=""
+                            year = yearCols[cell.column]
+                        except KeyError:
+                            year = ""
+                        obj = {}
+                        obj['id'] = iso
+                        obj['year'] = str(year)
+                        obj['comment'] = comment.content.replace("\n", " ")
+                        obj['pub-date'] = ""
+                        try:
+                            obj['pub-url'] = obj['comment'][obj['comment'].lower().index("http"):].strip()
+                        except ValueError:
+                            obj['pub-url'] = ""
                         if "Author:" in obj['comment']:
-                            obj['pub-title']=obj['comment'][8:]
+                            obj['pub-title'] = obj['comment'][8:]
                         else:
-                            obj['pub-title']=obj['comment']
-                        if obj['pub-url']!="":
+                            obj['pub-title'] = obj['comment']
+                        if obj['pub-url'] != "":
                             obj['pub-title'] = obj['pub-title'][:obj['pub-title'].lower().index("http")].strip()
                         sources.append(obj)
-#Output results
 print('Writing CSV...')
-keys = ['id','year','pub-date','pub-title','pub-url','comment']
-with open(options.output, 'wb') as output_file:
+keys = ['id', 'year', 'pub-date', 'pub-title', 'pub-url', 'comment']
+with open(os.path.join(dir_path, options.output), 'w') as output_file:
     dict_writer = csv.DictWriter(output_file, keys)
     dict_writer.writeheader()
     dict_writer.writerows(sources)
