@@ -14,7 +14,7 @@ dbDisconnect(con)
 deflator = read.csv("project_data/usd_deflator_2014_2016_apr.csv",na="")
 
 # Load data, removing na strings
-data_url = "https://www.imf.org/external/pubs/ft/weo/2018/01/weodata/WEOApr2018all.xls"
+data_url = "project_data/WEOApr2018all.xls"
 weo = read.csv(data_url,sep="\t",na.strings=c("","n/a","--"))
 
 # Set our desired indicators with nice names
@@ -60,3 +60,23 @@ cf$usd.per.ncu = NULL
 # Somalia gets dropped
 cf = merge(cf,id.map,by="weo_country_code")
 write.csv(cf,"output/weo_current_ncu_to_constant_2016_usd_conversion_factor.csv",na="",row.names=F)
+
+# Population
+pop = subset(weo, Subject.Descriptor == "Population")
+keep = c("WEO.Country.Code","ISO","Country",paste0("X",c(1981:2023)))
+pop = pop[,keep]
+
+# Dataset has commas in numbers, which need to be removed and parsed as numbers
+pop[,paste0("X",c(1981:2023))] = as.numeric(sapply(pop[,paste0("X",c(1981:2023))],gsub,pattern=",",replacement=""))
+
+# From reshape2 package, melt turns dataset as long as it can go
+pop.m = melt(pop,id.vars=c("WEO.Country.Code","ISO","Country"))
+pop.m$year = substr(pop.m$variable,2,5)
+pop.m$variable = NULL
+pop.m$value = pop.m$value * 1000000
+
+# Drop unnecessary columns, rename, and write csv
+keep = c("WEO.Country.Code","ISO","Country","year","value")
+pop.m = pop.m[,keep]
+names(pop.m) = c("weo_country_code","iso_alpha_3_code","country_name","year","population")
+write.csv(pop.m,"output/weo_population.csv",na="",row.names=F)
