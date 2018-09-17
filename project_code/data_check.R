@@ -7,6 +7,7 @@ wd <- "~/git/domestic_finance_2018/output"
 setwd(wd)
 
 domestic = read.csv("domestic.csv",na.strings="")
+domestic$value = domestic$value.ncu
 domestic$value.ncu = NULL
 domestic = data.table(domestic)
 
