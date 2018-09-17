@@ -82,5 +82,5 @@ inequal.list[["L1"]] = inequalities
 message("L1 inequalities: ",nrow(inequalities))
 
 all.inequalities = rbindlist(inequal.list)
-all.inequalities = subset(all.inequalities,value>0)
+all.inequalities = subset(all.inequalities,child.value.sum>0)
 write.csv(all.inequalities,"inequalities.csv",na="",row.names=F)
