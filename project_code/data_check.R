@@ -9,6 +9,7 @@ setwd(wd)
 domestic = read.csv("domestic.csv",na.strings="")
 domestic$value = domestic$value.ncu
 domestic$value.ncu = NULL
+domestic$value.ppp = NULL
 domestic = data.table(domestic)
 
 domestic = domestic[order(domestic$di_id,domestic$year,domestic$budget.type,domestic$l1,domestic$l2,domestic$l3,domestic$l4,domestic$l5,domestic$l6),]
