@@ -83,7 +83,7 @@ pop.m$value = pop.m$value * 1000000
 keep = c("WEO.Country.Code","ISO","Country","year","value")
 pop.m = pop.m[,keep]
 names(pop.m) = c("weo_country_code","iso_alpha_3_code","country_name","year","population")
-pf = merge(pf,id.map,by="weo_country_code")
+pf = merge(pop.m,id.map,by="weo_country_code")
 write.csv(pf,"output/weo_population.csv",na="",row.names=F)
 
 #### constant.2011.ppp.per.current.ncu ####
