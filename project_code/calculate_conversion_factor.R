@@ -1,3 +1,5 @@
+#### Startup ####
+
 list.of.packages <- c("data.table","reshape2","varhandle")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
@@ -16,6 +18,8 @@ deflator = read.csv("project_data/usd_deflator_2014_2016_apr.csv",na="")
 # Load data, removing na strings
 data_url = "project_data/WEOApr2018all.xls"
 weo = read.csv(data_url,sep="\t",na.strings=c("","n/a","--"))
+
+#### constant.2016.usd.per.current.ncu ####
 
 # Set our desired indicators with nice names
 weo$indicator = NA
@@ -53,7 +57,7 @@ indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
 deflator$iso_alpha_3_code=NULL
 deflator$country_name=NULL
 cf = merge(indicators.l,deflator,by=c("weo_country_code","year"))
-cf$current.ncu.to.constant.2016.usd = cf$usd.per.ncu * (cf$deflator/100)
+cf$constant.2016.usd.per.current.ncu = cf$usd.per.ncu * (cf$deflator/100)
 
 cf$deflator = NULL
 cf$usd.per.ncu = NULL
@@ -61,7 +65,7 @@ cf$usd.per.ncu = NULL
 cf = merge(cf,id.map,by="weo_country_code")
 write.csv(cf,"output/weo_current_ncu_to_constant_2016_usd_conversion_factor.csv",na="",row.names=F)
 
-# Population
+#### Population ####
 pop = subset(weo, Subject.Descriptor == "Population")
 keep = c("WEO.Country.Code","ISO","Country",paste0("X",c(1981:2023)))
 pop = pop[,keep]
@@ -79,4 +83,45 @@ pop.m$value = pop.m$value * 1000000
 keep = c("WEO.Country.Code","ISO","Country","year","value")
 pop.m = pop.m[,keep]
 names(pop.m) = c("weo_country_code","iso_alpha_3_code","country_name","year","population")
-write.csv(pop.m,"output/weo_population.csv",na="",row.names=F)
+pf = merge(pf,id.map,by="weo_country_code")
+write.csv(pf,"output/weo_population.csv",na="",row.names=F)
+
+#### constant.2011.ppp.per.current.ncu ####
+
+# Set our desired indicators with nice names
+weo$indicator = NA
+weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product per capita, constant prices" & weo$Units == "Purchasing power parity; 2011 international dollar")] = "constant.ppp.gdp.pc"
+weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product per capita, current prices" & weo$Units == "National currency")] = "current.ncu.gdp.pc"
+
+# Grab just those indicators and relevant columns
+indicators = subset(weo,!is.na(indicator))
+keep = c("WEO.Country.Code","ISO","Country","indicator",paste0("X",c(1981:2023)))
+indicators = indicators[,keep]
+
+# Dataset has commas in numbers, which need to be removed and parsed as numbers
+indicators[,paste0("X",c(1981:2023))] = as.numeric(sapply(indicators[,paste0("X",c(1981:2023))],gsub,pattern=",",replacement=""))
+
+# From reshape2 package, melt turns dataset as long as it can go
+indicators.m = melt(indicators,id.vars=c("WEO.Country.Code","ISO","Country","indicator"))
+
+# dcast takes a molten dataframe and reshapes it given a formula, here we're recasting long
+indicators.l = dcast(indicators.m,WEO.Country.Code+ISO+Country+variable~indicator)
+
+# Remove the leading X now that year is no longer a variable name
+indicators.l$year = substr(indicators.l$variable,2,5)
+indicators.l$variable = NULL
+
+# Reorder by country and year
+indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
+# Now that we're reordered, calculate exchange rate
+indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$constant.ppp.gdp.pc/indicators.l$current.ncu.gdp.pc
+
+# Drop unnecessary columns, rename, and write csv
+keep = c("WEO.Country.Code","ISO","Country","year","constant.2011.ppp.per.current.ncu")
+indicators.l = indicators.l[,keep]
+names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","constant.2011.ppp.per.current.ncu")
+indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
+
+# Somalia gets dropped
+pppf = merge(indicators.l,id.map,by="weo_country_code")
+write.csv(pppf,"output/weo_current_ncu_to_constant_2011_ppp_conversion_factor.csv",na="",row.names=F)
