@@ -67,13 +67,19 @@ names(df)[names(df) == "iso"] <- "di_id"
 setdiff(completed_countries,unique(df$country))
 
 mult <- read.csv("weo_current_ncu_to_constant_2016_usd_conversion_factor.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
-keep = c("di_id","year","current.ncu.to.constant.2016.usd")
+keep = c("di_id","year","constant.2016.usd.per.current.ncu")
 mult = mult[keep]
+mult2 <- read.csv("weo_current_ncu_to_constant_2011_ppp_conversion_factor.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
+keep = c("di_id","year","constant.2011.ppp.per.current.ncu")
+mult2 = mult2[keep]
+mult = merge(mult,mult2)
 # Not sure if this is still required
-mult$current.ncu.to.constant.2016.usd[which(mult$id=="SY")] <- 1
+mult$constant.2016.usd.per.current.ncu[which(mult$di_id=="SY")] <- 1
+mult$constant.2011.ppp.per.current.ncu[which(mult$di_id=="SY")] <- 1
 
 if("value-ncu" %in% colnames(df)){
   names(df)[names(df)=="value-ncu"] <- "value.ncu"
+  names(df)[names(df)=="value-ppp"] <- "value.ppp"
   df$value <- df$value.ncu
 }else{
   df$value.ncu <- df$value
@@ -84,16 +90,18 @@ df <- merge(
   ,by=c("di_id","year")
   ,all.x=TRUE
 )
-df <- transform(df,value=current.ncu.to.constant.2016.usd*value.ncu)
+df <- transform(df,value=constant.2016.usd.per.current.ncu*value.ncu)
+df <- transform(df,value.ppp=constant.2011.ppp.per.current.ncu*value.ncu)
 df <- transform(df,l1=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l1))))
 df <- transform(df,l2=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l2))))
 df <- transform(df,l3=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l3))))
 df <- transform(df,l4=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l4))))
 df <- transform(df,l5=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l5))))
 df <- transform(df,l6=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", l6))))
-keep <- c(1,2,5,6,7,8,9,10,11,12,13)
+keep <- c(1,2,5,6,7,8,9,10,11,12,13,16)
 df <- df[,keep]
 names(df)[names(df) == "value.ncu"] <- "value-ncu"
+names(df)[names(df) == "value.ppp"] <- "value-ppp"
 names(df)[names(df) == "type"] <- "budget-type"
 write.csv(df,"domestic.csv",row.names=FALSE,na="")
 names(df)
