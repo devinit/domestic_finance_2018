@@ -69,7 +69,7 @@ setdiff(completed_countries,unique(df$country))
 mult <- read.csv("weo_current_ncu_to_constant_2016_usd_conversion_factor.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
 keep = c("di_id","year","constant.2016.usd.per.current.ncu")
 mult = mult[keep]
-mult2 <- read.csv("weo_current_ncu_to_constant_2011_ppp_conversion_factor.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
+mult2 <- read.csv("weo_current_ncu_to_constant_2011_ppp_conversion_factor_itep.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
 keep = c("di_id","year","constant.2011.ppp.per.current.ncu")
 mult2 = mult2[keep]
 mult = merge(mult,mult2)
