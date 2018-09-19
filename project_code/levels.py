@@ -8,7 +8,7 @@ import copy
 
 # Parse Options
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718 190918.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
 parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json", help="orgDict JSON file", metavar="FILE")
@@ -27,38 +27,70 @@ completed_countries = [
     "Burundi",
     "Cape Verde",
     "Cambodia",
+    "Cameroon",
     "Central African Republic",
     "Chad",
+    "Comoros",
     "Congo Rep.",
+    "Cote D'Ivoire",
+    "Djibouti",
     "Democratic Republic of Congo",
-    "Eritrea",
+    "Egypt",
+    "El Salvador",
     "Ethiopia",
     "Gambia",
+    "Georgia",
     "Ghana",
     "Guinea",
     "Guinea-Bissau",
     "Haiti",
+    "Honduras",
+    "India",
+    "Indonesia",
     "Kenya",
+    "Kiribati",
+    "Kosovo",
+    "Kyrgyz",
+    "Laos",
     "Lesotho",
     "Liberia",
     "Madagascar",
     "Malawi",
     "Mali",
+    "Mauritania",
     "Micronesia",
+    "Moldova",
+    "Mongolia",
+    "Morocco",
     "Mozambique",
+    "Myanmar",
     "Nepal",
+    "Nicaragua",
     "Niger",
     "Nigeria",
     "Pakistan",
     "Papua New Guinea",
+    "Philippines",
     "Rwanda",
+    "Sao Tome and Principe",
     "Senegal",
+    "Sierra Leone",
+    "Solomon Islands",
     "Somalia",
     "South Sudan",
+    "Sri Lanka",
     "Sudan",
+    "Swaziland",
+    "Tajikistan",
     "Tanzania",
+    "Timor-Leste",
     "Togo",
+    "Tunisia",
     "Uganda",
+    "Ukraine",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vietnam",
     "Zambia"
 ]
 
@@ -85,6 +117,7 @@ sheets = wb.sheetnames
 # budget reference
 budgetDict = {}
 budgetDict["Actual"] = "actual"
+budgetDict["actual"] = "actual"
 budgetDict["Act"] = "actual"
 budgetDict["Budget"] = "budget"
 budgetDict["Est"] = "actual"

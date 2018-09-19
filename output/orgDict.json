@@ -283,14 +283,6 @@
       "l4": "",
       "l5": "",
       "l6": ""
-    },
-    "l4_nbr_tax": {
-      "l1": "Total Revenue and Grants",
-      "l2": "Revenue",
-      "l3": "Tax Revenue",
-      "l4": "National Board of Revenue (NBR) taxes",
-      "l5": "",
-      "l6": ""
     }
   },
   "Benin": {
@@ -841,6 +833,128 @@
       "l6": ""
     }
   },
+  "Cameroon": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_domestically_financed": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "Domestically Financed Investment",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_loans": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Drawings",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods and Services",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nonoil_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-Oil Sector Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_subsidies_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Subsidies And Transfers",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Cape Verde": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -1175,6 +1289,104 @@
       "l6": ""
     }
   },
+  "Comoros": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_external_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "External",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Congo Rep.": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -1285,6 +1497,104 @@
       "l2": "Recurrent Expenditure",
       "l3": "Other Current Expenditure",
       "l4": "Transfers",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Cote D'Ivoire": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_fianance": {
+      "l1": "Financing",
+      "l2": "External Financing",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Due",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nontax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Nontax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
       "l5": "",
       "l6": ""
     }
@@ -1447,6 +1757,284 @@
       "l2": "Revenue",
       "l3": "Nontax Revenue",
       "l4": "Revenue from natural resources and telecoms",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Djibouti": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Investment Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_bank_financing": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "Bank Financing",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods and Services",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nontax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Nontax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_wages": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Wages and Salaries",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_indirect_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Indirect and Other Taxes",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Egypt": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_goods_services": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Goods and Services",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_property": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Income and Property",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "El Salvador": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_fianance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_current_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Current Transfers",
+      "l4": "",
       "l5": "",
       "l6": ""
     }
@@ -1643,6 +2231,120 @@
       "l2": "Revenue",
       "l3": "Tax Revenue",
       "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Georgia": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_fianance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_subsidies_grants": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Subsidies and Grants",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_direct_taxes": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Direct Taxes",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_indirect_taxes": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Indirect Taxes",
       "l5": "",
       "l6": ""
     }
@@ -2079,6 +2781,236 @@
       "l6": ""
     }
   },
+  "Honduras": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Domestic Financing",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_fianance": {
+      "l1": "Financing",
+      "l2": "External Financing",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "Transfers",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "India": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total revenue and grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total revenue and grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_revenue": {
+      "l1": "Total revenue and grants",
+      "l2": "Revenue",
+      "l3": "Other revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total revenue and grants",
+      "l2": "Revenue",
+      "l3": "Tax revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_central_gov_tax": {
+      "l1": "Total revenue and grants",
+      "l2": "Revenue",
+      "l3": "Tax revenue",
+      "l4": "Central government collected",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Indonesia": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue And Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue And Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue And Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_goods_services": {
+      "l1": "Total Revenue And Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Taxes on Goods and Services",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Kenya": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -2205,6 +3137,358 @@
       "l2": "Revenue",
       "l3": "Tax Revenue",
       "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Kiribati": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nontax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Nontax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_current": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Other Recurrent",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Kosovo": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_subsidies_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Subsidies and Transfers",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Kyrgyz": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_social_funds": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Social Fund Expenditures",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Laos": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Income and Profit Taxes",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_royalities": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Royalties",
       "l5": "",
       "l6": ""
     }
@@ -2739,6 +4023,144 @@
       "l6": ""
     }
   },
+  "Mauritania": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_nonresource_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_nonresource_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Other",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_resource_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Oil Account",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_non_resource": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non Resource Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_resource": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Resource Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_borrowing": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Other",
+      "l4": "Net Borrowing",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non Resource Revenue",
+      "l4": "Tax Revenue",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Micronesia": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -2849,6 +4271,292 @@
       "l2": "Revenue",
       "l3": "Tax Revenue",
       "l4": "Other Taxes",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Moldova": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "External",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_capital": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "Externally Financed",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods And Services",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenues",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Transfers",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_transfers_household": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Transfers",
+      "l4": "Transfers to Households",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Mongolia": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_loans": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Disbursements",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue and Social Security Contributions",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_taxes": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue and Social Security Contributions",
+      "l4": "Income Taxes",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Morocco": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Use of Goods and Services and Grants",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_wages": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Compensation Of Employees",
+      "l4": "",
       "l5": "",
       "l6": ""
     }
@@ -2967,6 +4675,72 @@
       "l6": ""
     }
   },
+  "Myanmar": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditures",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Nepal": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -3012,6 +4786,96 @@
       "l1": "Total Revenue and Grants",
       "l2": "Revenue",
       "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Nicaragua": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditures",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditures",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_loans": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Disbursements",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax",
       "l4": "",
       "l5": "",
       "l6": ""
@@ -3505,6 +5369,56 @@
       "l6": ""
     }
   },
+  "Philippines": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Taxes",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Rwanda": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -3631,6 +5545,96 @@
       "l2": "Revenue",
       "l3": "Tax Revenue",
       "l4": "Direct Taxes",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Sao Tome and Principe": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nontax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Nontax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
       "l5": "",
       "l6": ""
     }
@@ -3784,6 +5788,194 @@
       "l1": "Total Expenditure",
       "l2": "Recurrent Expenditure",
       "l3": "Subsidies",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Sierra Leone": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_loans": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Loans",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Solomon Islands": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Development Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Other Recurrent",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
       "l4": "",
       "l5": "",
       "l6": ""
@@ -3961,6 +6153,72 @@
       "l6": ""
     }
   },
+  "Sri Lanka": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Financing",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Sudan": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -4080,6 +6338,242 @@
       "l3": "Transfer Payments",
       "l4": "States",
       "l5": "",
+      "l6": ""
+    }
+  },
+  "Swaziland": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Taxes on Income, Profits, and Capital Gains",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Tajikistan": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Grants",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_external_loans": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "Disbursements",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods and Services",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Transfers and Subsidies",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_domestic_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "Domestic",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_goods_services": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Taxes on Goods and Services",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_profits": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Income and Profits",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_trade": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "International Trade and Operations Tax",
+      "l5": "",
+      "l6": ""
+    },
+    "l5_excises": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Taxes on Goods and Services",
+      "l5": "Excises and Other Internal Indirect Taxes",
       "l6": ""
     }
   },
@@ -4221,6 +6715,96 @@
       "l6": ""
     }
   },
+  "Timor-Leste": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_non_resource": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-Resource Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_petroleum_fund": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "Petroleum Fund Withdrawals",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_resource": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Resource Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_taxes": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-Resource Revenue",
+      "l4": "Taxes",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Togo": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -4311,6 +6895,128 @@
       "l6": ""
     }
   },
+  "Tunisia": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Expenditure",
+      "l2": "Capital Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "Other Expenditure",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_transfers": {
+      "l1": "Total Expenditure",
+      "l2": "Current Expenditure",
+      "l3": "Transfers and Subsidies",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_excise": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Excise",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_other_taxes": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Other Taxes",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_vat": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Value Added Tax",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Uganda": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
@@ -4397,6 +7103,326 @@
       "l2": "Revenue",
       "l3": "Tax Revenue",
       "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Ukraine": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_subsidies": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Social Benefits",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_goods_services_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax revenue",
+      "l4": "Tax on Goods and Services",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_income_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax revenue",
+      "l4": "Tax on Income, Profits, and Capital Gains",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Uzbekistan": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_social_safety": {
+      "l1": "Total Expenditure",
+      "l2": "Social Safety Net",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_pension": {
+      "l1": "Total Expenditure",
+      "l2": "Social Safety Net",
+      "l3": "Pension And Employment Fund",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_goods_services": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Taxes on Goods and Services",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Vanuatu": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net Domestic Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Taxes",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    }
+  },
+  "Vietnam": {
+    "l1_expenditure": {
+      "l1": "Total Expenditure",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Financing",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_foreign": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent Expenditure",
+      "l3": "Other Recurrent",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_nonoil_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Non-Oil Tax Revenues",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_oil_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Tax Revenue",
+      "l4": "Oil Revenues",
       "l5": "",
       "l6": ""
     }
