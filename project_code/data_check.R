@@ -84,5 +84,6 @@ message("L1 inequalities: ",nrow(inequalities))
 
 all.inequalities = rbindlist(inequal.list)
 all.inequalities = subset(all.inequalities,child.value.sum>0)
-all.inequalities$absdiff = abs((all.inequalities$value-all.inequalities$child.value.sum)/all.inequalities$child.value.sum)
+all.inequalities$absdiff = abs((all.inequalities$value-all.inequalities$child.value.sum)/all.inequalities$child.value.sum)*100
+all.inequalities = all.inequalities[order(-all.inequalities$absdiff),]
 write.csv(all.inequalities,"inequalities.csv",na="",row.names=F)
