@@ -13,9 +13,13 @@ domestic$value.ppp = NULL
 domestic = data.table(domestic)
 
 # Remove trailing zeroes
-domestic[,magnitude:=10^(floor(log(max(.SD$value,na.rm=T),10))-1),by=.(di_id,year,budget.type)]
-domestic$magnitude[which(is.nan(domestic$magnitude))] = NA
+domestic[,max:=max(.SD$value,na.rm=T),by=.(di_id,year,budget.type)]
+domestic$max = format(domestic$max,scientific=FALSE)
+matches <- regmatches(domestic$max, gregexpr("0(?=0*$)", domestic$max, perl=TRUE))
+domestic$zeroes = sapply(matches, length)
+domestic$magnitude = 10^domestic$zeroes
 domestic$value = domestic$value/domestic$magnitude
+domestic[,c("max","zeroes"):=NULL]
 
 domestic = domestic[order(domestic$di_id,domestic$year,domestic$budget.type,domestic$l1,domestic$l2,domestic$l3,domestic$l4,domestic$l5,domestic$l6),]
 
