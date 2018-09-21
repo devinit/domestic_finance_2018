@@ -12,6 +12,11 @@ domestic$value.ncu = NULL
 domestic$value.ppp = NULL
 domestic = data.table(domestic)
 
+# Remove trailing zeroes
+domestic[,magnitude:=10^(floor(log(max(.SD$value,na.rm=T),10))-1),by=.(di_id,year,budget.type)]
+domestic$magnitude[which(is.nan(domestic$magnitude))] = NA
+domestic$value = domestic$value/domestic$magnitude
+
 domestic = domestic[order(domestic$di_id,domestic$year,domestic$budget.type,domestic$l1,domestic$l2,domestic$l3,domestic$l4,domestic$l5,domestic$l6),]
 
 
@@ -84,6 +89,6 @@ message("L1 inequalities: ",nrow(inequalities))
 
 all.inequalities = rbindlist(inequal.list)
 all.inequalities = subset(all.inequalities,child.value.sum>0)
-all.inequalities$absdiff = abs((all.inequalities$value-all.inequalities$child.value.sum)/all.inequalities$child.value.sum)*100
+all.inequalities$absdiff = abs((all.inequalities$value-all.inequalities$child.value.sum))
 all.inequalities = all.inequalities[order(-all.inequalities$absdiff),]
 write.csv(all.inequalities,"inequalities.csv",na="",row.names=F)
