@@ -8,7 +8,7 @@ import copy
 
 # Parse Options
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_KB070417_DK0100718 190918.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_210918.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
 parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json", help="orgDict JSON file", metavar="FILE")
@@ -91,7 +91,32 @@ completed_countries = [
     "Uzbekistan",
     "Vanuatu",
     "Vietnam",
-    "Zambia"
+    "Zambia",
+    "Albania",
+    "Algeria",
+    "Armenia",
+    "Azerbaijan",
+    "Belarus",
+    "Botswana",
+    "Brazil",
+    "Colombia",
+    "Costa Rica",
+    "Ecuador",
+    "Equatorial Guinea",
+    "Fiji",
+    "Gabon",
+    "Guatemala",
+    "Guyana",
+    "Iran",
+    "Jamaica",
+    "Jordan",
+    "Lebanon",
+    "Malaysia",
+    "Maldives",
+    "Mauritius",
+    "Turkmenistan",
+    "Tuvalu",
+    "Venezuela"
 ]
 
 

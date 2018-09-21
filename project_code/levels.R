@@ -82,7 +82,32 @@ completed_countries = c(
   "Uzbekistan",
   "Vanuatu",
   "Vietnam",
-  "Zambia"
+  "Zambia",
+  "Albania",
+  "Algeria",
+  "Armenia",
+  "Azerbaijan",
+  "Belarus",
+  "Botswana",
+  "Brazil",
+  "Colombia",
+  "Costa Rica",
+  "Ecuador",
+  "Equatorial Guinea",
+  "Fiji",
+  "Gabon",
+  "Guatemala",
+  "Guyana",
+  "Iran",
+  "Jamaica",
+  "Jordan",
+  "Lebanon",
+  "Malaysia",
+  "Maldives",
+  "Mauritius",
+  "Turkmenistan",
+  "Tuvalu",
+  "Venezuela"
 )
 df <- read.csv("./results.csv"
                , header = TRUE
