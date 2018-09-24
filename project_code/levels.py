@@ -223,11 +223,15 @@ for sheet in sheets:
         iso = str(names[0]).strip()
         names = names[5:]
         levels = levels[5:]
+        oldNames = oldNames[5:]
         nameLen = len(names)
         yearLen = len(years)
 
         for i in range(0, nameLen):
             name = str(names[i]).strip()
+            oldName = str(oldNames[i]).strip()
+            if name in ["", "None", "none"]:
+                name = oldName
             level = str(levels[i]).lower().strip()
             if level != 'none':
                 for j in range(0, yearLen):
