@@ -6943,8 +6943,8 @@
       "l6": ""
     },
     "l2_external_finance": {
-      "l1": "Total Revenue and Grants",
-      "l2": "Grants",
+      "l1": "Financing",
+      "l2": "Net External Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -6983,8 +6983,8 @@
       "l6": ""
     },
     "l3_external_loans": {
-      "l1": "Total Revenue and Grants",
-      "l2": "Grants",
+      "l1": "Financing",
+      "l2": "Net External Finance",
       "l3": "Loans",
       "l4": "",
       "l5": "",
