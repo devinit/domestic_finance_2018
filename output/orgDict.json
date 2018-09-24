@@ -222,7 +222,7 @@
       "l1": "Total Revenue and Grants",
       "l2": "Revenue",
       "l3": "Tax Revenue",
-      "l4": "Excise Tax",
+      "l4": "Local Government Revenue",
       "l5": "",
       "l6": ""
     },
@@ -1251,7 +1251,7 @@
     "l3_tax": {
       "l1": "Total Revenue and Grants",
       "l2": "Revenue",
-      "l3": "Other revenue",
+      "l3": "Taxes",
       "l4": "",
       "l5": "",
       "l6": ""
