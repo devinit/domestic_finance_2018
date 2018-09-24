@@ -140,8 +140,11 @@ except:
 sheets = wb.sheetnames
 
 # Import Dictionary
-with open(os.path.join(dir_path, options.dict), 'r') as output_file:
-    orgDict = json.load(output_file)
+try:
+    with open(os.path.join(dir_path, options.dict), 'r') as output_file:
+        orgDict = json.load(output_file)
+except:
+    orgDict = {}
 
 # budget reference
 budgetDict = {}
@@ -247,8 +250,7 @@ for sheet in sheets:
                     if level != "l0":
                         item_copy = copy.deepcopy(item)
                         item_copy['l'+str(level_rank)] = ""
-                        if level not in orgDict[country]:
-                            orgDict[country][level] = item_copy
+                        orgDict[country][level] = item_copy
                     item['iso'] = iso
                     item['country'] = country
                     item['currency'] = currency
