@@ -139,6 +139,10 @@ except:
     raise Exception("Input xlsx path required!")
 sheets = wb.sheetnames
 
+# Import Dictionary
+with open(os.path.join(dir_path, options.dict), 'r') as output_file:
+    orgDict = json.load(output_file)
+
 # budget reference
 budgetDict = {}
 budgetDict["Actual"] = "actual"
@@ -168,7 +172,6 @@ budgetDict["Staff"] = "proj"
 budgetDict[""] = ""
 budgetDict[None] = ""
 
-orgDict = {}
 flatData = []
 hierData = {"name": "budget", "children": []}
 for sheet in sheets:
@@ -189,7 +192,8 @@ for sheet in sheets:
         types = []
         values = []
         country = sheet.strip()
-        orgDict[country] = {}
+        if country not in orgDict:
+            orgDict[country] = {}
         print('Reading sheet: '+country)
         for row in ws.iter_rows():
             names.append(row[0].value)
@@ -243,7 +247,8 @@ for sheet in sheets:
                     if level != "l0":
                         item_copy = copy.deepcopy(item)
                         item_copy['l'+str(level_rank)] = ""
-                        orgDict[country][level] = item_copy
+                        if level not in orgDict[country]:
+                            orgDict[country][level] = item_copy
                     item['iso'] = iso
                     item['country'] = country
                     item['currency'] = currency
