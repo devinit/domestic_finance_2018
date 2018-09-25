@@ -180,7 +180,7 @@ if(fix_inequalities){
   non_miss_l4_parents = subset(l4_parents,!is.na(value))
   l4_children = l5
   
-  l4_children_agg = l4_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4,l5)]
+  l4_children_agg = l4_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4)]
   setnames(l4_children_agg,"value","child.value.sum")
   l4_children_agg = subset(l4_children_agg,child.value.sum>0)
   
@@ -195,7 +195,7 @@ if(fix_inequalities){
   non_miss_l3_parents = subset(l3_parents,!is.na(value))
   l3_children = l4
   
-  l3_children_agg = l3_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4,l5)]
+  l3_children_agg = l3_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3)]
   setnames(l3_children_agg,"value","child.value.sum")
   l3_children_agg = subset(l3_children_agg,child.value.sum>0)
   
@@ -210,7 +210,7 @@ if(fix_inequalities){
   non_miss_l2_parents = subset(l2_parents,!is.na(value))
   l2_children = l3
   
-  l2_children_agg = l2_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4,l5)]
+  l2_children_agg = l2_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2)]
   setnames(l2_children_agg,"value","child.value.sum")
   l2_children_agg = subset(l2_children_agg,child.value.sum>0)
   
@@ -225,7 +225,7 @@ if(fix_inequalities){
   non_miss_l1_parents = subset(l1_parents,!is.na(value))
   l1_children = l2
   
-  l1_children_agg = l1_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4,l5)]
+  l1_children_agg = l1_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1)]
   setnames(l1_children_agg,"value","child.value.sum")
   l1_children_agg = subset(l1_children_agg,child.value.sum>0)
   
