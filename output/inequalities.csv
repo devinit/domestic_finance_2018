@@ -21,7 +21,6 @@
 "ve",2016,"proj","total-expenditure","current-expenditure",,,,,127254417.3,10000,154516708,27262290.7
 "ve",2016,"proj","total-expenditure",,,,,,154516708,10000,127254417.3,27262290.7
 "BI",2008,"actual","total-revenue-and-grants","grants",,,,,51829875,10000,47683485,4146390
-"BI",2008,"actual","financing","net-external-finance",,,,,-1520343,10000,1934982,3455325
 "ZA",2011,"actual","total-expenditure","recurrent-expenditure",,,,,92286012,10000,92599910,313898
 "ZA",2010,"actual","total-expenditure","recurrent-expenditure",,,,,82996259,10000,82702986,293273
 "SR",2007,"actual","financing","net-external-finance","exceptional--external-financing",,,,338562,1000,104793,233769
@@ -110,7 +109,6 @@
 "RW",2018,"proj","total-revenue-and-grants","revenue","nontax-revenue",,,,1841,1e+08,1155,686
 "SZ",2005,"actual","total-expenditure",,,,,,57577,1e+05,58260,683
 "ML",2018,"proj","total-revenue-and-grants",,,,,,19489,1e+08,20168,679
-"BI",2004,"actual","financing","net-external-finance",,,,,374,1e+08,1041,667
 "NG",2011,"actual","total-expenditure","extrabudgetary-funds",,,,,1632,1e+09,975,657
 "ZM",2011,"actual","total-revenue-and-grants","revenue","other-revenue",,,,1501,1e+06,868,633
 "ML",2014,"actual","total-revenue-and-grants",,,,,,12151,1e+08,12767,616
@@ -142,7 +140,6 @@
 "ve",2015,"proj","total-expenditure",,,,,,1497,1e+09,1190,307
 "NG",2017,"actual","total-revenue-and-grants","revenue","oil-revenue",,,,302,1e+10,14.6,287.4
 "NG",2016,"actual","total-expenditure","federal-government-expenditure",,,,,4695,1e+09,4965,270
-"BI",2007,"actual","financing","net-external-finance",,,,,-93,1e+08,163,256
 "TG",2013,"actual","total-expenditure","recurrent-expenditure","other-current",,,,-1,1e+08,234,235
 "GA",2014,"actual","financing",,,,,,-211,1e+09,24,235
 "NG",2020,"proj","total-expenditure","federal-government-expenditure","federal-government-recurrent-expenditure",,,,8610,1e+09,8376,234
@@ -194,7 +191,6 @@
 "TZ",2001,"actual","financing","net-domestic-finance",,,,,242,1e+08,339,97
 "TD",2008,"actual","total-revenue-and-grants","revenue",,,,,9861,1e+08,9770,91
 "MH",2009,"actual","total-expenditure",,,,,,954,1e+05,863,91
-"BI",2005,"actual","financing","net-external-finance",,,,,554,1e+08,644,90
 "XK",2021,"proj","total-expenditure",,,,,,2237,1e+06,2322,85
 "XK",2022,"proj","total-expenditure",,,,,,2358,1e+06,2443,85
 "BJ",2014,"actual","total-revenue-and-grants",,,,,,8167,1e+08,8249,82
@@ -259,7 +255,6 @@
 "UA",2018,"proj","total-expenditure","recurrent-expenditure",,,,,12623,1e+08,12597,26
 "UA",2017,"proj","total-expenditure","recurrent-expenditure","social-benefits",,,,4337,1e+08,4362,25
 "IQ",2021,"proj","total-revenue-and-grants","domestic-financing",,,,,58,1e+11,33,25
-"BI",2006,"actual","financing","net-external-finance",,,,,6.4,1e+09,30.8,24.4
 "SL",2009,"actual","total-revenue-and-grants","grants",,,,,500,1e+09,476,24
 "UA",2017,"proj","total-expenditure","recurrent-expenditure",,,,,10579,1e+08,10555,24
 "MH",2004,"actual","total-expenditure",,,,,,778,1e+05,802,24
@@ -1364,6 +1359,7 @@
 "BF",2021,"proj","total-revenue-and-grants","grants",,,,,344,1e+09,343,1
 "BI",2004,"actual","total-expenditure","recurrent-expenditure",,,,,1632,1e+08,1631,1
 "BI",2004,"actual","total-revenue-and-grants","grants",,,,,1084,1e+08,1085,1
+"BI",2005,"actual","financing","net-external-finance",,,,,554,1e+08,555,1
 "BI",2007,"actual","total-expenditure","recurrent-expenditure",,,,,2612,1e+08,2613,1
 "BI",2011,"actual","total-expenditure","recurrent-expenditure",,,,,7263,1e+08,7262,1
 "BI",2012,"actual","total-expenditure","recurrent-expenditure",,,,,7922,1e+08,7923,1
