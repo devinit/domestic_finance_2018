@@ -8,7 +8,7 @@ import copy
 
 # Parse Options
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_250918.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_2509186pm.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
 parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json", help="orgDict JSON file", metavar="FILE")
@@ -225,26 +225,27 @@ for sheet in sheets:
             orgDict[country] = {}
         print('Reading sheet: '+country)
         for row in ws.iter_rows():
-            names.append(row[0].value)
-            oldNames.append(row[1].value)
-            levels.append(row[2].value)
-            colLen = len(row)
-            if str(row[1].value).lower() == "year":
-                for i in range(3, colLen):
-                    val = float_if_possible(row[i].value)
-                    if str(val).lower() != 'none':
-                        years.append(val)
-            if str(row[1].value).lower() == "type":
-                for i in range(3, colLen):
-                    val = float_if_possible(row[i].value)
-                    types.append(val)
-            if rowIndex >= 5:
-                rowValues = []
-                for i in range(3, colLen):
-                    val = float_if_possible(row[i].value)
-                    rowValues.append(val)
-                values.append(rowValues)
-            rowIndex += 1
+            if len(row) > 0:
+                names.append(row[0].value)
+                oldNames.append(row[1].value)
+                levels.append(row[2].value)
+                colLen = len(row)
+                if str(row[1].value).lower() == "year":
+                    for i in range(3, colLen):
+                        val = float_if_possible(row[i].value)
+                        if str(val).lower() != 'none':
+                            years.append(val)
+                if str(row[1].value).lower() == "type":
+                    for i in range(3, colLen):
+                        val = float_if_possible(row[i].value)
+                        types.append(val)
+                if rowIndex >= 5:
+                    rowValues = []
+                    for i in range(3, colLen):
+                        val = float_if_possible(row[i].value)
+                        rowValues.append(val)
+                    values.append(rowValues)
+                rowIndex += 1
         currency = oldNames[1]
         iso = str(names[0]).strip()
         names = names[5:]

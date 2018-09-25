@@ -4927,6 +4927,216 @@
       "l6": ""
     }
   },
+  "Iraq": {
+    "l1_expenditure": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_financing": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l1_revenue_and_grants": {
+      "l1": "Total Revenue and Grants",
+      "l2": "",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_capital_development": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Investment Expenditures",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_domestic_finance": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Domestic Financing",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_non_oil": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_oil": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_recurrent": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_bank_financing": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Domestic Financing",
+      "l3": "Bank Financing",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_budget_loans": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Net External Finance",
+      "l3": "Budget Loans",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_crude_oil_export_revenues": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Oil",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_good_services_nonoil": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods and services",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_goods_services_oil": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Goods and Services (Oil Sector)",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_interest": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Interest Payments",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_non-tax_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-oil",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_nonoil_investment": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Investment Expenditures",
+      "l3": "Non-Oil Investment Expenditures",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_oil_investment_expenditures": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Investment Expenditures",
+      "l3": "Oil Investment Expenditures",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_oil_related_public_enterprises": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Oil",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_other_revenue": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-oil",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_salary_pension": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Salary and Pension",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-oil",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_transfers": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Transfers",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_direct_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-oil",
+      "l4": "Tax Revenues",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_indirect_tex": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Non-oil",
+      "l4": "Tax Revenues",
+      "l5": "",
+      "l6": ""
+    },
+    "l4_salary": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Recurrent Expenditure",
+      "l3": "Salary and Pension",
+      "l4": "Salary",
+      "l5": "",
+      "l6": ""
+    }
+  },
   "Jamaica": {
     "l1_expenditure": {
       "l1": "Total Expenditure",
