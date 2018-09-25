@@ -8,7 +8,7 @@ import copy
 
 # Parse Options
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_240918_5pm.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_250918.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/results.csv", help="Output CSV file", metavar="FILE")
 parser.add_option("-j", "--outputjson", dest="outputjson", default="../output/results.json", help="Output json file", metavar="FILE")
 parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json", help="orgDict JSON file", metavar="FILE")
@@ -116,7 +116,31 @@ completed_countries = [
     "Mauritius",
     "Turkmenistan",
     "Tuvalu",
-    "Venezuela"
+    "Venezuela",
+    "Belize",
+    "Bosnia and Herzegovina",
+    "China",
+    "Dominica",
+    "Dominican Republic",
+    "Grenada",
+    "Iraq",
+    "Kazakhstan",
+    "Macedonia, FYRO",
+    "Marshall Islands",
+    "Mexico",
+    "Montenegro",
+    "Namibia",
+    "Nauru",
+    "Paraguay",
+    "Peru",
+    "Russia",
+    "Samoa",
+    "South Africa",
+    "St. Lucia",
+    "Suriname",
+    "Thailand",
+    "Tonga",
+    "Turkey"
 ]
 
 
@@ -172,6 +196,8 @@ budgetDict["Projection"] = "proj"
 budgetDict["Prog"] = "proj"
 budgetDict["Rev"] = "proj"
 budgetDict["Staff"] = "proj"
+budgetDict["Rev Prog"] = "proj"
+budgetDict["Rev Proj"] = "proj"
 budgetDict[""] = ""
 budgetDict[None] = ""
 
