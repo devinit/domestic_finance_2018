@@ -81,7 +81,7 @@
 "business-profit-tax","FALSE",4,"Business Profit tax",
 "capital","FALSE",2,"Capital",
 "capital-expenditure","FALSE",2,"Capital Expenditure",
-"capital-expenditure-and-net-lending","FALSE",2,"Capital Expenditure and Net Lending",
+"capital-expenditure-and-net-lending","FALSE",2,"Capital expenditure and net lending",
 "capital-expenditures","FALSE",2,"Capital Expenditures",
 "capital-gain-tax","FALSE",5,"Capital Gain Tax",
 "capital-grants","FALSE",2,"Capital Grants",
@@ -188,7 +188,7 @@
 "currency-and-deposits","FALSE",3,"Currency and Deposits",
 "current","FALSE",3,"Current",
 "current-charges-on-public-debt","FALSE",3,"Current Charges on Public Debt",
-"current-expenditure","FALSE",2,"Current expenditure",
+"current-expenditure","FALSE",2,"Current Expenditure",
 "current-grants","FALSE",3,"Current Grants",
 "current-grants-cash","FALSE",3,"Current grants (cash)",
 "current-maintenance","FALSE",3,"Current Maintenance",
@@ -426,7 +426,7 @@
 "financial-system","FALSE",3,"Financial System",
 "financial-transfer","FALSE",5,"Financial transfer",
 "financing","FALSE",1,"Financing","purple-high"
-"financing-gap","FALSE",2,"Financing gap",
+"financing-gap","FALSE",2,"Financing Gap",
 "fines-and-forfeits","FALSE",5,"Fines and Forfeits",
 "fishing-access-revenue","FALSE",4,"Fishing Access Revenue",
 "fishing-license-fee","FALSE",4,"Fishing license fee",
@@ -681,7 +681,7 @@
 "nato-training-missionafghanistan","FALSE",4,"NATO Training Mission-Afghanistan",
 "natural-resource-tax","FALSE",5,"Natural resource tax",
 "net-acquisition-of-domestic-financial-assets","FALSE",3,"Net acquisition of domestic financial assets",
-"net-acquisition-of-financial-assets","FALSE",2,"Net Acquisition of Financial Assets",
+"net-acquisition-of-financial-assets","FALSE",2,"Net acquisition of financial assets",
 "net-acquisition-of-foriegn-financial-assets","FALSE",3,"Net acquisition of foriegn financial assets",
 "net-amortization","FALSE",3,"Net Amortization",
 "net-bank-loan-financing","FALSE",3,"Net Bank Loan Financing",
@@ -742,7 +742,7 @@
 "nonmining-taxes","FALSE",3,"Non-mining Taxes",
 "nonmonetary-sector","FALSE",3,"Non-Monetary Sector",
 "nonnational-board-of-revenue-nbr-taxes","FALSE",4,"Non-National Board of Revenue (NBR) taxes",
-"nonoil","FALSE",3,"Non-oil",
+"nonoil","FALSE",2,"Non-oil",
 "nonoil-investment-expenditures","FALSE",3,"Non-Oil Investment Expenditures",
 "nonoil-revenue","FALSE",3,"Non-Oil Revenue",
 "nonoil-sector-revenue","FALSE",3,"Non-Oil Sector Revenue",
@@ -771,7 +771,7 @@
 "of-which--gold-sector","FALSE",5,"Of which:  Gold sector",
 "of-which-nondonor-financed","FALSE",3,"Of which: non-donor financed",
 "of-which--other","FALSE",5,"of which:  Other",
-"oil","FALSE",3,"Oil",
+"oil","FALSE",2,"Oil",
 "oil-account","FALSE",3,"Oil Account",
 "oil-account-contribution-to-the-budget","FALSE",4,"Oil Account Contribution to The Budget",
 "oil-and-gas-revenue","FALSE",4,"Oil and Gas Revenue",
@@ -847,7 +847,7 @@
 "other-excess-crude-account","FALSE",3,"Other Excess Crude Account",
 "other-expenditure","FALSE",2,"Other Expenditure","grey-mid"
 "other-expenditure-in-the-budget","FALSE",2,"Other Expenditure in The Budget",
-"other-expenditures","FALSE",2,"Other Expenditures",
+"other-expenditures","FALSE",2,"Other expenditures",
 "other-expendse","FALSE",3,"Other Expendse",
 "other-expense","FALSE",2,"Other expense",
 "other-expenses","FALSE",3,"Other Expenses",
@@ -983,7 +983,7 @@
 "privatization","FALSE",2,"Privatization","grey-mid"
 "privatization-and-other-exceptional-receipts8","FALSE",3,"Privatization and other exceptional receipts8",
 "privatization-and-other-extraordinary-receipts","FALSE",2,"Privatization and Other Extraordinary Receipts",
-"privatization-proceeds","FALSE",2,"Privatization Proceeds","grey-mid"
+"privatization-proceeds","FALSE",2,"Privatization proceeds","grey-mid"
 "privatization-receipts","FALSE",2,"Privatization receipts","grey-mid"
 "privatization-revenues","FALSE",3,"Privatization Revenues",
 "privatizations-and-other-sale-of-assets","FALSE",3,"Privatizations And Other Sale Of Assets",
@@ -1051,7 +1051,7 @@
 "real-estate-transaction-registration","FALSE",5,"Real estate transaction registration",
 "recovered-funds","FALSE",3,"Recovered Funds",
 "recurrent-departmental-charges","FALSE",3,"Recurrent Departmental Charges",
-"recurrent-expenditure","FALSE",2,"Recurrent expenditure",
+"recurrent-expenditure","FALSE",2,"Recurrent Expenditure",
 "recurrent-expenditures","FALSE",2,"Recurrent Expenditures",
 "refinancing-of-development-finance-corporation","FALSE",3,"Refinancing Of Development Finance Corporation",
 "refined-petroleum-products","FALSE",5,"Refined Petroleum Products",
@@ -1286,8 +1286,8 @@
 "to-nonresidents","FALSE",4,"to Nonresidents",
 "to-residents","FALSE",4,"to Residents",
 "to-statutory-funds","FALSE",4,"To Statutory Funds",
-"total-expenditure","FALSE",1,"Total expenditure","purple-high"
-"total-revenue-and-grants","FALSE",1,"Total Revenue And Grants","purple-high"
+"total-expenditure","FALSE",1,"Total Expenditure","purple-high"
+"total-revenue-and-grants","FALSE",1,"Total revenue and grants","purple-high"
 "tourism--8-bed-tax","FALSE",5,"Tourism ($ 8 bed tax)",
 "tourism-goods-and-services-tax","FALSE",5,"Tourism Goods and Services Tax",
 "tourism-tax-6-green-tax-1","FALSE",5,"Tourism tax ($6 green tax) 1/",
