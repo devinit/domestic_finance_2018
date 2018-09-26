@@ -10029,7 +10029,7 @@
     "l3_external_loans": {
       "l1": "Financing",
       "l2": "Net External Finance",
-      "l3": "Exceptional  External Financing",
+      "l3": "Disbursements",
       "l4": "",
       "l5": "",
       "l6": ""
@@ -10354,7 +10354,7 @@
     },
     "l2_external_finance": {
       "l1": "Financing",
-      "l2": "Net External Finance",
+      "l2": "Net Domestic Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -10649,7 +10649,7 @@
     "l3_interest": {
       "l1": "Total Expenditure",
       "l2": "Recurrent Expenditure",
-      "l3": "Other Current",
+      "l3": "Interest",
       "l4": "",
       "l5": "",
       "l6": ""
@@ -11356,7 +11356,7 @@
     },
     "l2_recurrent": {
       "l1": "Total Expenditure",
-      "l2": "Current expenditure",
+      "l2": "Recurrent expenditure",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -11398,7 +11398,7 @@
     },
     "l2_domestic": {
       "l1": "Financing",
-      "l2": "Net External Finance",
+      "l2": "Net Domestic Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -11496,7 +11496,7 @@
     },
     "l2_domestic finance": {
       "l1": "Financing",
-      "l2": "Net External Finance",
+      "l2": "Net Domestic Finance",
       "l3": "",
       "l4": "",
       "l5": "",

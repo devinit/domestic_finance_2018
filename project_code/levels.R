@@ -137,7 +137,11 @@ completed_countries = c(
   "Suriname",
   "Thailand",
   "Tonga",
-  "Turkey"
+  "Turkey",
+  "Palau",
+  "Serbia",
+  "St. Vincent and Grenadines",
+  "Panama"
 )
 domestic <- read.csv("./results.csv"
                , header = TRUE
