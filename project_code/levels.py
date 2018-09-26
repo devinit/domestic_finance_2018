@@ -15,139 +15,6 @@ parser.add_option("-d", "--dict", dest="dict", default="../output/orgDict.json",
 (options, args) = parser.parse_args()
 
 
-# Temporary subset
-completed_countries = [
-    "Afghanistan",
-    "Angola",
-    "Bangladesh",
-    "Benin",
-    "Bhutan",
-    "Bolivia",
-    "Burkina Faso",
-    "Burundi",
-    "Cape Verde",
-    "Cambodia",
-    "Cameroon",
-    "Central African Republic",
-    "Chad",
-    "Comoros",
-    "Congo Rep.",
-    "Cote D'Ivoire",
-    "Djibouti",
-    "Democratic Republic of Congo",
-    "Egypt",
-    "El Salvador",
-    "Ethiopia",
-    "Gambia",
-    "Georgia",
-    "Ghana",
-    "Guinea",
-    "Guinea-Bissau",
-    "Haiti",
-    "Honduras",
-    "India",
-    "Indonesia",
-    "Kenya",
-    "Kiribati",
-    "Kosovo",
-    "Kyrgyz",
-    "Laos",
-    "Lesotho",
-    "Liberia",
-    "Madagascar",
-    "Malawi",
-    "Mali",
-    "Mauritania",
-    "Micronesia",
-    "Moldova",
-    "Mongolia",
-    "Morocco",
-    "Mozambique",
-    "Myanmar",
-    "Nepal",
-    "Nicaragua",
-    "Niger",
-    "Nigeria",
-    "Pakistan",
-    "Papua New Guinea",
-    "Philippines",
-    "Rwanda",
-    "Sao Tome and Principe",
-    "Senegal",
-    "Sierra Leone",
-    "Solomon Islands",
-    "Somalia",
-    "South Sudan",
-    "Sri Lanka",
-    "Sudan",
-    "Swaziland",
-    "Tajikistan",
-    "Tanzania",
-    "Timor-Leste",
-    "Togo",
-    "Tunisia",
-    "Uganda",
-    "Ukraine",
-    "Uzbekistan",
-    "Vanuatu",
-    "Vietnam",
-    "Zambia",
-    "Albania",
-    "Algeria",
-    "Armenia",
-    "Azerbaijan",
-    "Belarus",
-    "Botswana",
-    "Brazil",
-    "Colombia",
-    "Costa Rica",
-    "Ecuador",
-    "Equatorial Guinea",
-    "Fiji",
-    "Gabon",
-    "Guatemala",
-    "Guyana",
-    "Iran",
-    "Jamaica",
-    "Jordan",
-    "Lebanon",
-    "Malaysia",
-    "Maldives",
-    "Mauritius",
-    "Turkmenistan",
-    "Tuvalu",
-    "Venezuela",
-    "Belize",
-    "Bosnia and Herzegovina",
-    "China",
-    "Dominica",
-    "Dominican Republic",
-    "Grenada",
-    "Iraq",
-    "Kazakhstan",
-    "Macedonia, FYRO",
-    "Marshall Islands",
-    "Mexico",
-    "Montenegro",
-    "Namibia",
-    "Nauru",
-    "Paraguay",
-    "Peru",
-    "Russia",
-    "Samoa",
-    "South Africa",
-    "St. Lucia",
-    "Suriname",
-    "Thailand",
-    "Tonga",
-    "Turkey",
-    "Palau",
-    "Serbia",
-    "St. Vincent and Grenadines",
-    "Panama"
-]
-
-
 def float_if_possible(test_input):
     """Function that tries to float a number. IF not possible, return alphanumerics only."""
     if test_input is not None:
@@ -208,95 +75,94 @@ budgetDict[None] = ""
 flatData = []
 hierData = {"name": "budget", "children": []}
 for sheet in sheets:
-    if sheet.strip() in completed_countries:
-        levelDict = {}
-        levelDict['l1'] = ""
-        levelDict['l2'] = ""
-        levelDict['l3'] = ""
-        levelDict['l4'] = ""
-        levelDict['l5'] = ""
-        levelDict['l6'] = ""
-        ws = wb[sheet]
-        rowIndex = 0
-        oldNames = []
-        names = []
-        levels = []
-        years = []
-        types = []
-        values = []
-        country = sheet.strip()
-        if country not in orgDict:
-            orgDict[country] = {}
-        print('Reading sheet: '+country)
-        for row in ws.iter_rows():
-            if len(row) > 0:
-                names.append(row[0].value)
-                oldNames.append(row[1].value)
-                levels.append(row[2].value)
-                colLen = len(row)
-                if str(row[1].value).lower() == "year":
-                    for i in range(3, colLen):
-                        val = float_if_possible(row[i].value)
-                        if str(val).lower() != 'none':
-                            years.append(val)
-                if str(row[1].value).lower() == "type":
-                    for i in range(3, colLen):
-                        val = float_if_possible(row[i].value)
-                        types.append(val)
-                if rowIndex >= 5:
-                    rowValues = []
-                    for i in range(3, colLen):
-                        val = float_if_possible(row[i].value)
-                        rowValues.append(val)
-                    values.append(rowValues)
-                rowIndex += 1
-        currency = oldNames[1]
-        iso = str(names[0]).strip()
-        names = names[5:]
-        levels = levels[5:]
-        oldNames = oldNames[5:]
-        nameLen = len(names)
-        yearLen = len(years)
+    levelDict = {}
+    levelDict['l1'] = ""
+    levelDict['l2'] = ""
+    levelDict['l3'] = ""
+    levelDict['l4'] = ""
+    levelDict['l5'] = ""
+    levelDict['l6'] = ""
+    ws = wb[sheet]
+    rowIndex = 0
+    oldNames = []
+    names = []
+    levels = []
+    years = []
+    types = []
+    values = []
+    country = sheet.strip()
+    if country not in orgDict:
+        orgDict[country] = {}
+    print('Reading sheet: '+country)
+    for row in ws.iter_rows():
+        if len(row) > 0:
+            names.append(row[0].value)
+            oldNames.append(row[1].value)
+            levels.append(row[2].value)
+            colLen = len(row)
+            if str(row[1].value).lower() == "year":
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    if str(val).lower() != 'none':
+                        years.append(val)
+            if str(row[1].value).lower() == "type":
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    types.append(val)
+            if rowIndex >= 5:
+                rowValues = []
+                for i in range(3, colLen):
+                    val = float_if_possible(row[i].value)
+                    rowValues.append(val)
+                values.append(rowValues)
+            rowIndex += 1
+    currency = oldNames[1]
+    iso = str(names[0]).strip()
+    names = names[5:]
+    levels = levels[5:]
+    oldNames = oldNames[5:]
+    nameLen = len(names)
+    yearLen = len(years)
 
-        for i in range(0, nameLen):
-            name = str(names[i]).strip()
-            oldName = str(oldNames[i]).strip()
-            if name in ["", "None", "none"]:
-                name = oldName
-            level = str(levels[i]).lower().strip()
-            if level != 'none':
-                for j in range(0, yearLen):
-                    item = {}
-                    year = years[j]
-                    yearType = types[j]
-                    try:
-                        levelDict = orgDict[country][level]
-                    except KeyError:
-                        pass
-                    level_rank = int(level[1:2])+1
-                    levelDict['l'+str(level_rank)] = name
-                    item['l1'] = levelDict['l1']
-                    item['l2'] = levelDict['l2'] if level_rank >= 2 else ""
-                    item['l3'] = levelDict['l3'] if level_rank >= 3 else ""
-                    item['l4'] = levelDict['l4'] if level_rank >= 4 else ""
-                    item['l5'] = levelDict['l5'] if level_rank >= 5 else ""
-                    item['l6'] = levelDict['l6'] if level_rank >= 6 else ""
+    for i in range(0, nameLen):
+        name = str(names[i]).strip()
+        oldName = str(oldNames[i]).strip()
+        if name in ["", "None", "none"]:
+            name = oldName
+        level = str(levels[i]).lower().strip()
+        if level != 'none':
+            for j in range(0, yearLen):
+                item = {}
+                year = years[j]
+                yearType = types[j]
+                try:
+                    levelDict = orgDict[country][level]
+                except KeyError:
+                    pass
+                level_rank = int(level[1:2])+1
+                levelDict['l'+str(level_rank)] = name
+                item['l1'] = levelDict['l1']
+                item['l2'] = levelDict['l2'] if level_rank >= 2 else ""
+                item['l3'] = levelDict['l3'] if level_rank >= 3 else ""
+                item['l4'] = levelDict['l4'] if level_rank >= 4 else ""
+                item['l5'] = levelDict['l5'] if level_rank >= 5 else ""
+                item['l6'] = levelDict['l6'] if level_rank >= 6 else ""
 
-                    if level != "l0":
-                        item_copy = copy.deepcopy(item)
-                        item_copy['l'+str(level_rank)] = ""
-                        orgDict[country][level] = item_copy
-                    item['iso'] = iso
-                    item['country'] = country
-                    item['currency'] = currency
-                    item['year'] = year
-                    item['type'] = budgetDict[yearType]
-                    try:
-                        item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
-                    except IndexError:
-                        item['value'] = ""
-                    if budgetDict[yearType] != "":
-                        flatData.append(item)
+                if level != "l0":
+                    item_copy = copy.deepcopy(item)
+                    item_copy['l'+str(level_rank)] = ""
+                    orgDict[country][level] = item_copy
+                item['iso'] = iso
+                item['country'] = country
+                item['currency'] = currency
+                item['year'] = year
+                item['type'] = budgetDict[yearType]
+                try:
+                    item['value'] = values[i][j] if str(values[i][j]).lower() != 'none' else ""
+                except IndexError:
+                    item['value'] = ""
+                if budgetDict[yearType] != "":
+                    flatData.append(item)
 print('Writing orgDict...')
 with open(os.path.join(dir_path, options.dict), 'w') as output_file:
     json.dump(orgDict, output_file, ensure_ascii=False, sort_keys=True, indent=2)
