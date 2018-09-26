@@ -57,7 +57,7 @@ indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
 deflator$iso_alpha_3_code=NULL
 deflator$country_name=NULL
 cf = merge(indicators.l,deflator,by=c("weo_country_code","year"))
-cf$constant.2016.usd.per.current.ncu = cf$usd.per.ncu * (cf$deflator/100)
+cf$constant.2016.usd.per.current.ncu = cf$usd.per.ncu / (cf$deflator/100)
 
 cf$deflator = NULL
 cf$usd.per.ncu = NULL
