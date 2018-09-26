@@ -548,7 +548,7 @@
     },
     "l2_domestic_finance": {
       "l1": "Financing",
-      "l2": "Net acquisition of financial assets",
+      "l2": "Net Domestic Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -7336,7 +7336,7 @@
     },
     "l2_domestic_finance": {
       "l1": "Financing",
-      "l2": "Capital Expenditure",
+      "l2": "Net Domestic Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -7344,7 +7344,7 @@
     },
     "l2_external_finance": {
       "l1": "Financing",
-      "l2": "Capital Expenditure",
+      "l2": "Net External Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -10658,7 +10658,7 @@
     },
     "l2_other_finance": {
       "l1": "Financing",
-      "l2": "Net Domestic Finance",
+      "l2": "Other Finance",
       "l3": "",
       "l4": "",
       "l5": "",
