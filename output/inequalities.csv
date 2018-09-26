@@ -18,7 +18,6 @@
 "NG",2012,"actual","total-expenditure","extrabudgetary-funds",,,,,1804,1e+09,688,1116
 "IQ",2018,"proj","total-revenue-and-grants",,,,,,875,1e+11,1977,1102
 "IQ",2017,"proj","total-revenue-and-grants",,,,,,820,1e+11,1899,1079
-"TZ",2000,"actual","financing","net-domestic-finance",,,,,211,1e+08,1217,1006
 "MM",2019,"proj","total-revenue-and-grants","revenue","tax-revenue",,,,10241000,1e+06,10240000,1000
 "MM",2015,"actual","total-revenue-and-grants",,,,,,13620000,1e+06,13619000,1000
 "MM",2017,"proj","total-revenue-and-grants",,,,,,16457000,1e+06,16458000,1000
@@ -76,7 +75,6 @@
 "ZM",2010,"actual","total-expenditure","recurrent-expenditure","transfers-and-subsidies","subsidies",,,1897,1e+06,1797,100
 "MM",2016,"actual","total-revenue-and-grants","revenue","tax-revenue",,,,618800,1e+07,618900,100
 "MM",2018,"proj","total-revenue-and-grants",,,,,,1883300,1e+07,1883400,100
-"TZ",2001,"actual","financing","net-domestic-finance",,,,,242,1e+08,339,97
 "IQ",2015,"actual","total-revenue-and-grants","domestic-financing",,,,,296,1e+11,216,80
 "RS",2015,"proj","total-expenditure","recurrent-expenditure",,,,,163.3,1e+10,234.2,70.9
 "SB",2018,"proj","total-expenditure","recurrent-expenditure","other-recurrent",,,,2271,1e+06,2201,70
@@ -113,7 +111,6 @@
 "IQ",2017,"proj","total-revenue-and-grants","investment-expenditures","oil-investment-expenditures",,,,137,1e+11,116,21
 "IQ",2020,"proj","total-revenue-and-grants","domestic-financing",,,,,66,1e+11,45,21
 "IQ",2022,"proj","total-revenue-and-grants","domestic-financing",,,,,40,1e+11,20,20
-"TZ",2006,"actual","financing","net-domestic-finance",,,,,382,1e+09,363,19
 "DM",2011,"actual","total-expenditure",,,,,,5277,1e+05,5296,19
 "TZ",2017,"proj","financing","net-external-finance","loans",,,,263.5,1e+10,280.5,17
 "PW",2009,"actual","total-expenditure",,,,,,793,1e+05,809,16
@@ -2253,7 +2250,6 @@
 "TZ",2010,"actual","total-expenditure","development-expenditure",,,,,2611,1e+09,2612,1
 "TZ",2011,"actual","financing","net-external-finance",,,,,1077,1e+09,1076,1
 "TZ",2011,"actual","total-revenue-and-grants","grants",,,,,1627,1e+09,1628,1
-"TZ",2012,"actual","financing","net-domestic-finance",,,,,334,1e+09,335,1
 "TZ",2012,"actual","financing","net-external-finance",,,,,1735,1e+09,1736,1
 "TZ",2012,"actual","total-expenditure","development-expenditure",,,,,3775,1e+09,3774,1
 "TZ",2012,"actual","total-expenditure","recurrent-expenditure",,,,,6990,1e+09,6989,1
