@@ -10642,7 +10642,7 @@
     },
     "l2_external_finance": {
       "l1": "Financing",
-      "l2": "Net Domestic Finance",
+      "l2": "Net External Finance",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -11694,7 +11694,7 @@
     },
     "l2_external_finance": {
       "l1": "Financing",
-      "l2": "Net Domestic Finance",
+      "l2": "Net External Finance",
       "l3": "",
       "l4": "",
       "l5": "",
