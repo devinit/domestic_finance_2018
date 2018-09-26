@@ -5,7 +5,7 @@ from optparse import OptionParser
 import pdb
 
 parser = OptionParser()
-parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_210918.xlsx", help="Input file", metavar="FILE")
+parser.add_option("-i", "--input", dest="input", default="../project_data/Final data government finance_2609186pm.xlsx", help="Input file", metavar="FILE")
 parser.add_option("-o", "--output", dest="output", default="../output/domestic-sources.csv", help="Output CSV file", metavar="FILE")
 (options, args) = parser.parse_args()
 
