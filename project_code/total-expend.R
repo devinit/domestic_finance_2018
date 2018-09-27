@@ -1,70 +1,84 @@
-path<- "~/git/domestic_finance_2018/output"
-setwd(path)
+#### Startup ####
 
-df <- read.csv("./domestic.csv",colClasses=c("character","numeric","character","character","character","character","character","character","character","numeric","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
+list.of.packages <- c("data.table","reshape2","varhandle")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+lapply(list.of.packages, require, character.only=T)
 
-totalExp <- subset(df,l1=="total-expenditure" & is.na(l2))
-keep <- c("id","year","value.ppp","budget.type")
-totalExp  <- totalExp[keep]
+# Change WD to git repo if needed
+wd <- "~/git/domestic_finance_2018"
+setwd(wd)
 
-adv <- read.csv("D:/Documents/Gov finance/adv_exp.csv",na.strings="",as.is=TRUE,colClasses=c("character","numeric","numeric","character"))
-mult <- read.csv("D:/git/digital-platform/reference/imf_weo_ncu_deflator.2014.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
-names(mult)[3] <- c("deflator")
-mult$deflator[which(mult$id=="SY")] <- 1
+df <- read.csv("output/domestic.csv",colClasses=c("character","numeric","character","character","character","character","character","character","character","numeric","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
 
-#Have a PPP conversion for every year, but equal to 2015 rate for all years for all countries except for Syria
-ppp <- read.csv("D:/git/digital-platform/reference/current-ncu-to-current-ppp.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
-names(ppp)[3] <- "ppp"
-sy.ppp <- subset(ppp,id=="SY")
-ppp <- subset(ppp,year==2014 & id!="SY")
-ppp$year <- NULL
-somalia.ppp <- data.frame("id"="SO","ppp"=1)
-ppp <- rbind(ppp,somalia.ppp)
-years <- c(1980:2021)
-ppp.frame <- data.frame("id"=sort(rep(ppp$id,length(years))),"year"=years)
-ppp <- merge(ppp.frame,ppp,by="id")
-ppp <- rbind(ppp,sy.ppp)
+exp_names = c("total-expenditure","expenditure")
+totalExp <- subset(df,l1 %in% exp_names & is.na(l2))
+keep <- c("di_id","year","value.ppp","budget.type")
+totalExp  <- totalExp[,keep]
 
-usd <- read.csv("D:/git/digital-platform/reference/current-ncu-to-current-usd.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
-names(usd)[3] <- "usd"
-sy.usd <- subset(usd,id=="SY")
-usd <- subset(usd,year==2014 & id!="SY")
-usd$year <- NULL
-somalia.usd <- data.frame("id"="SO","usd"=1)
-usd <- rbind(usd,somalia.usd)
-years <- c(1980:2021)
-usd.frame <- data.frame("id"=sort(rep(usd$id,length(years))),"year"=years)
-usd <- merge(usd.frame,usd,by="id")
-usd <- rbind(usd,sy.usd)
+# Load data, removing na strings
+data_url = "project_data/WEOApr2018all.xls"
+weo = read.csv(data_url,sep="\t",na.strings=c("","n/a","--"))
 
-mult <- merge(mult,ppp,by=c("id","year"))
-mult <- merge(mult,usd,by=c("id","year"))
-mult$mult.ppp <- mult$deflator/mult$ppp
-mult$mult.usd <- mult$deflator*mult$usd
-mult$deflator <- NULL
-mult$ppp <- NULL
-mult$usd <- NULL
+#### Advanced econ expenditure ####
 
-adv <- merge(adv,mult,by=c("id","year"))
-adv <- transform(adv,value.ppp=value*mult.ppp)
-# adv <- transform(adv,value.constant=value*mult.usd)
-# write.csv(adv,"D:/Documents/Data/Ex/deflated_advanced_expenditure.csv",row.names=FALSE,na="")
-adv <- adv[c("id","year","value.ppp","budget.type")]
+# Set our desired indicators with nice names
+weo$indicator = NA
+weo$indicator[which(weo$Subject.Descriptor== "General government total expenditure" & weo$Units == "National currency")] = "total.exp.ncu"
+
+# Grab just those indicators and relevant columns
+indicators = subset(weo,!is.na(indicator))
+keep = c("WEO.Country.Code","ISO","Country","indicator",paste0("X",c(1981:2023)))
+indicators = indicators[,keep]
+
+# Dataset has commas in numbers, which need to be removed and parsed as numbers
+indicators[,paste0("X",c(1981:2023))] = as.numeric(sapply(indicators[,paste0("X",c(1981:2023))],gsub,pattern=",",replacement=""))
+
+# From reshape2 package, melt turns dataset as long as it can go
+indicators.m = melt(indicators,id.vars=c("WEO.Country.Code","ISO","Country","indicator"))
+
+# dcast takes a molten dataframe and reshapes it given a formula, here we're recasting long
+indicators.l = dcast(indicators.m,WEO.Country.Code+ISO+Country+variable~indicator)
+
+# Remove the leading X now that year is no longer a variable name
+indicators.l$year = substr(indicators.l$variable,2,5)
+indicators.l$variable = NULL
+
+# Reorder by country and year
+indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
+
+keep = c("WEO.Country.Code","ISO","Country","year","total.exp.ncu")
+indicators.l = indicators.l[,keep]
+names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","total.exp.ncu")
+indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
+
+mult <- read.csv("output/weo_current_ncu_to_constant_2011_ppp_conversion_factor_itep.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
+keep = c("weo_country_code","di_id","year","constant.2011.ppp.per.current.ncu")
+mult = mult[keep]
+
+adv = merge(indicators.l,mult,by=c("weo_country_code","year"))
+adv$value.ppp = adv$total.exp.ncu * adv$constant.2011.ppp.per.current.ncu
+keep = c("di_id","year","value.ppp")
+adv = adv[keep]
+adv$budget.type = "actual"
 
 dat <- rbind(totalExp,adv)
 
-pop <- read.csv("./weo-population-total.csv",colClasses=c("character","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
+pop <- read.csv("output/weo_population.csv",colClasses=c("character","character","character","character","numeric","character"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
+pop$year = as.numeric(pop$year)
+keep = c("di_id","year","population")
+pop = pop[keep]
 names(pop)[3] <- "pop"
 dat <- merge(
   dat,
   pop,
-  by=c("id","year"),
+  by=c("di_id","year"),
   all.x=TRUE
 )
 
 dat <- transform(dat,value.ppp.pc=value.ppp/pop)
 
-dat <- dat[c("id","year","value.ppp.pc","budget.type")]
-names(dat) <- c("id","year","value","budget-type")
+dat <- dat[c("di_id","year","value.ppp.pc","budget.type")]
+names(dat) <- c("di_id","year","value","budget-type")
 
-write.csv(dat,"./total-exp-ppp-per-capita.csv",row.names=FALSE,na="")
+write.csv(dat,"output/total-exp-ppp-per-capita.csv",row.names=FALSE,na="")
