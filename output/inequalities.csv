@@ -2,12 +2,10 @@
 "AG",2003,"actual","financing","net-external-finance",,,,,1296,1e+05,482,814
 "SC",2008,"actual","total-expenditure",,,,,,3482,1e+06,2686,796
 "AG",2002,"actual","financing","net-external-finance",,,,,1146,1e+05,439,707
-"SA",2015,"actual","financing","net-external-finance",,,,,0,1e+09,454,454
 "YE",2004,"actual","total-expenditure",,,,,,8351,1e+08,8758,407
 "YE",2003,"actual","total-expenditure",,,,,,7248,1e+08,7631,383
 "ZW",2009,"actual","financing","change-in-arrears",,,,,367,1e+06,48,319
 "YE",2001,"actual","total-expenditure",,,,,,4770,1e+08,5067,297
-"SA",2016,"actual","financing","net-external-finance",,,,,103,1e+09,367,264
 "YE",2002,"actual","total-expenditure",,,,,,5529,1e+08,5781,252
 "KN",2014,"actual","total-revenue-and-grants","revenue","nontax-revenue",,,,4144,1e+05,3918,226
 "YE",2000,"actual","total-expenditure",,,,,,4727,1e+08,4938,211
@@ -18,13 +16,11 @@
 "YE",2005,"actual","total-expenditure",,,,,,1117,1e+09,1179,62
 "SC",2016,"actual","total-expenditure",,,,,,7277,1e+06,7242,35
 "KN",2012,"actual","total-revenue-and-grants","revenue","nontax-revenue",,,,2463,1e+05,2434,29
-"SA",2017,"actual","financing","net-external-finance",,,,,8.1,1e+10,22.4,14.3
 "KN",2011,"actual","total-revenue-and-grants","revenue",,,,,6511,1e+05,6500,11
 "MW",2017,"actual","total-expenditure","recurrent-expenditure","goods-and-services",,,,2510,1e+08,2520,10
 "MW",2017,"actual","financing","net-external-finance",,,,,1040,1e+08,1030,10
 "MW",2017,"actual","financing",,,,,,2120,1e+08,2110,10
 "SC",2011,"actual","total-expenditure",,,,,,4690,1e+06,4681,9
-"SA",2018,"proj","financing","net-external-finance",,,,,6.4,1e+10,13.5,7.1
 "YE",2006,"actual","total-expenditure",,,,,,133.6,1e+10,140.5,6.90000000000001
 "SC",2013,"actual","total-expenditure",,,,,,6110,1e+06,6104,6
 "YE",2008,"actual","total-expenditure",,,,,,217,1e+10,221.7,4.69999999999999
