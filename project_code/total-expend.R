@@ -1,4 +1,4 @@
-path<- "D:/git/digital-platform/country-year/"
+path<- "~/git/domestic_finance_2018/output"
 setwd(path)
 
 df <- read.csv("./domestic.csv",colClasses=c("character","numeric","character","character","character","character","character","character","character","numeric","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)

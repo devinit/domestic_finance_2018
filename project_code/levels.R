@@ -26,6 +26,7 @@ domestic <- read.csv("./results.csv"
                                "character","character","numeric")
                )
 names(domestic)[names(domestic) == "iso"] <- "di_id"
+domestic$di_id = toupper(domestic$di_id)
 
 # Fix small inequalities
 domestic = data.table(domestic)
