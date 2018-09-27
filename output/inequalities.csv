@@ -1,7 +1,4 @@
 "di_id","year","budget.type","l1","l2","l3","l4","l5","l6","value","magnitude","child.value.sum","absdiff"
-"YE",2001,"actual","total-expenditure",,,,,,4770,1e+08,5067,297
-"YE",2002,"actual","total-expenditure",,,,,,5529,1e+08,5781,252
-"YE",2000,"actual","total-expenditure",,,,,,4727,1e+08,4938,211
 "GA",2007,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","domestic-taxes-on-goods-and-services",,1303,1e+08,1302,1
 "GA",2008,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","domestic-taxes-on-goods-and-services",,131,1e+09,130,1
 "GA",2010,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","taxes-on-international-trade-and-transactions",,361,1e+09,362,1
