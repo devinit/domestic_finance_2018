@@ -13,7 +13,7 @@ id.map = ddw("dimension.imf_weo_country_to_di_id_map")
 setnames(id.map,"imf_weo_country_code","weo_country_code")
 dbDisconnect(con)
 
-deflator = read.csv("project_data/usd_deflator_2014_2016_apr.csv",na="")
+deflator = read.csv("output/usd_deflator_2014_2016_apr.csv",na="")
 
 # Load data, removing na strings
 data_url = "project_data/WEOApr2018all.xls"
