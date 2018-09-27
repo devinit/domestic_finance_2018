@@ -440,11 +440,14 @@
 "ID",2013,"actual","total-revenue-and-grants","revenue","tax-revenue",,,,1192,1e+12,1191,1
 "ID",2015,"actual","total-revenue-and-grants","revenue","tax-revenue",,,,1379,1e+12,1378,1
 "ID",2016,"actual","total-revenue-and-grants","revenue","tax-revenue",,,,1434,1e+12,1433,1
+"IQ",2004,"actual","total-expenditure","investment-expenditures","nonoil-investment-expenditures",,,,6126,1e+09,6127,1
 "IQ",2005,"actual","total-expenditure","recurrent-expenditure","salary-and-pension",,,,9389,1e+09,9390,1
 "IQ",2006,"actual","total-expenditure","recurrent-expenditure","salary-and-pension",,,,11034,1e+09,11035,1
 "IQ",2009,"actual","total-expenditure","recurrent-expenditure","transfers",,,,127,1e+11,126,1
 "IQ",2013,"actual","financing","domestic-financing","bank-financing",,,,46,1e+11,45,1
 "IQ",2015,"actual","total-expenditure","recurrent-expenditure","salary-and-pension",,,,422,1e+11,421,1
+"IQ",2016,"actual","total-expenditure","investment-expenditures","nonoil-investment-expenditures",,,,84,1e+11,83,1
+"IQ",2019,"proj","total-expenditure","investment-expenditures","nonoil-investment-expenditures",,,,94,1e+11,95,1
 "IQ",2020,"proj","total-expenditure","recurrent-expenditure","salary-and-pension",,,,451,1e+11,452,1
 "IR",2011,"actual","total-revenue-and-grants","revenue","taxes",,,,359451,1e+09,359452,1
 "IR",2015,"actual","total-revenue-and-grants","revenue","taxes",,,,791980,1e+09,791979,1
