@@ -12,7 +12,7 @@ dbDisconnect(con)
 
 wd <- "~/git/domestic_finance_2018/output"
 setwd(wd)
-fix_inequalities = F
+fix_inequalities = T
 
 domestic <- read.csv("./results.csv"
                , header = TRUE
