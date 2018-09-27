@@ -539,7 +539,7 @@
   },
   "Argentina": {
     "l1_expenditure": {
-      "l1": "Expenditure",
+      "l1": "Total Expenditure",
       "l2": "",
       "l3": "",
       "l4": "",
@@ -554,9 +554,9 @@
       "l5": "",
       "l6": ""
     },
-    "l2_federal": {
-      "l1": "Expenditure",
-      "l2": "Federal expenditures",
+    "l2_recurrent": {
+      "l1": "Total Expenditure",
+      "l2": "Recurrent expenditure",
       "l3": "",
       "l4": "",
       "l5": "",
@@ -564,32 +564,8 @@
     },
     "l2_revenue": {
       "l1": "Total Revenue and Grants",
-      "l2": "Revenues",
+      "l2": "Revenue",
       "l3": "",
-      "l4": "",
-      "l5": "",
-      "l6": ""
-    },
-    "l2_transfers_to_provinces": {
-      "l1": "Expenditure",
-      "l2": "Transfers to provinces",
-      "l3": "",
-      "l4": "",
-      "l5": "",
-      "l6": ""
-    },
-    "l3_discretionary": {
-      "l1": "Expenditure",
-      "l2": "Transfers to provinces",
-      "l3": "Discretionary",
-      "l4": "",
-      "l5": "",
-      "l6": ""
-    },
-    "l3_transfers_to_private": {
-      "l1": "Expenditure",
-      "l2": "Federal expenditures",
-      "l3": "Current transfers to private sector",
       "l4": "",
       "l5": "",
       "l6": ""
@@ -9620,6 +9596,22 @@
       "l5": "",
       "l6": ""
     },
+    "l2_domestic_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l2_external_finance": {
+      "l1": "Financing",
+      "l2": "Net External Finance",
+      "l3": "",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
     "l2_incurrence_liabilities": {
       "l1": "Financing",
       "l2": "Net incurrence of liabilities",
@@ -10596,6 +10588,14 @@
       "l1": "Total Expenditure",
       "l2": "Recurrent Expenditure",
       "l3": "Interest",
+      "l4": "",
+      "l5": "",
+      "l6": ""
+    },
+    "l3_non_tax": {
+      "l1": "Total Revenue and Grants",
+      "l2": "Revenue",
+      "l3": "Nontax Revenue",
       "l4": "",
       "l5": "",
       "l6": ""
