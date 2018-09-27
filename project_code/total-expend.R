@@ -57,6 +57,7 @@ keep = c("weo_country_code","di_id","year","constant.2011.ppp.per.current.ncu")
 mult = mult[keep]
 
 adv = merge(indicators.l,mult,by=c("weo_country_code","year"))
+adv$total.exp.ncu = adv$total.exp.ncu * 1000000000
 adv$value.ppp = adv$total.exp.ncu * adv$constant.2011.ppp.per.current.ncu
 keep = c("di_id","year","value.ppp")
 adv = adv[keep]
