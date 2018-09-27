@@ -86,45 +86,6 @@ names(pop.m) = c("weo_country_code","iso_alpha_3_code","country_name","year","po
 pf = merge(pop.m,id.map,by="weo_country_code")
 write.csv(pf,"output/weo_population.csv",na="",row.names=F)
 
-#### constant.2011.ppp.per.current.ncu ####
-
-# Set our desired indicators with nice names
-weo$indicator = NA
-weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product per capita, constant prices" & weo$Units == "Purchasing power parity; 2011 international dollar")] = "constant.ppp.gdp.pc"
-weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product per capita, current prices" & weo$Units == "National currency")] = "current.ncu.gdp.pc"
-
-# Grab just those indicators and relevant columns
-indicators = subset(weo,!is.na(indicator))
-keep = c("WEO.Country.Code","ISO","Country","indicator",paste0("X",c(1981:2023)))
-indicators = indicators[,keep]
-
-# Dataset has commas in numbers, which need to be removed and parsed as numbers
-indicators[,paste0("X",c(1981:2023))] = as.numeric(sapply(indicators[,paste0("X",c(1981:2023))],gsub,pattern=",",replacement=""))
-
-# From reshape2 package, melt turns dataset as long as it can go
-indicators.m = melt(indicators,id.vars=c("WEO.Country.Code","ISO","Country","indicator"))
-
-# dcast takes a molten dataframe and reshapes it given a formula, here we're recasting long
-indicators.l = dcast(indicators.m,WEO.Country.Code+ISO+Country+variable~indicator)
-
-# Remove the leading X now that year is no longer a variable name
-indicators.l$year = substr(indicators.l$variable,2,5)
-indicators.l$variable = NULL
-
-# Reorder by country and year
-indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
-# Now that we're reordered, calculate exchange rate
-indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$constant.ppp.gdp.pc/indicators.l$current.ncu.gdp.pc
-
-# Drop unnecessary columns, rename, and write csv
-keep = c("WEO.Country.Code","ISO","Country","year","constant.2011.ppp.per.current.ncu")
-indicators.l = indicators.l[,keep]
-names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","constant.2011.ppp.per.current.ncu")
-indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
-
-# Somalia gets dropped
-pppf = merge(indicators.l,id.map,by="weo_country_code")
-write.csv(pppf,"output/weo_current_ncu_to_constant_2011_ppp_conversion_factor.csv",na="",row.names=F)
 #### constant.2011.ppp.per.current.ncu ITEP METHOD ####
 
 # Set our desired indicators with nice names
@@ -154,7 +115,7 @@ indicators.l$variable = NULL
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
 # Now that we're reordered, calculate exchange rate
 indicators.l.2011 = subset(indicators.l,year==2011)
-indicators.l.2011$ppp.rate = NULL
+indicators.l.2011$ncu.per.ppp = NULL
 indicators.l.2011$year = NULL
 setnames(indicators.l.2011,"gdp.deflator","gdp.deflator.2011")
 indicators.l = merge(indicators.l,indicators.l.2011)
