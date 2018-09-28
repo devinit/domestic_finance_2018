@@ -97,4 +97,4 @@ dat <- transform(dat,value.ppp.pc=value.ppp/pop)
 dat <- dat[c("di_id","year","value.ppp.pc","budget.type")]
 names(dat) <- c("di_id","year","value","budget-type")
 
-write.csv(dat,"output/total-exp-ppp-per-capita.csv",row.names=FALSE,na="")
+write.csv(dat,"output/govt_spend_pc.csv",row.names=FALSE,na="")
