@@ -69,6 +69,7 @@ adv = adv[keep]
 adv$budget.type = "actual"
 
 adv <- adv[c("di_id","year","value.ng","value.total","budget.type")]
+adv = subset(adv, !(di_id %in% unique(totalRevGrants$di_id)))
 
 dat <- merge(
   totalRevGrants

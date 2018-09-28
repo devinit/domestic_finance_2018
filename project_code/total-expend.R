@@ -62,6 +62,7 @@ adv$value.ppp = adv$total.exp.ncu * adv$constant.2011.ppp.per.current.ncu
 keep = c("di_id","year","value.ppp")
 adv = adv[keep]
 adv$budget.type = "actual"
+adv = subset(adv, !(di_id %in% unique(totalExp$di_id)))
 
 dat <- rbind(totalExp,adv)
 
