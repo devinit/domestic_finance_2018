@@ -102,5 +102,5 @@ keep = c("di_id","year","value","budget.type")
 totalRevGrants = totalRevGrants[,keep]
 totalRevs = totalRevs[,keep]
 
-write.csv(totalRevGrants,"./total-revenue-percent-gdp.csv",row.names=FALSE,na="")
-write.csv(totalRevs,"./gov-revenue-percent-gdp.csv",row.names=FALSE,na="")
+write.csv(totalRevGrants,"output/total-revenue-percent-gdp.csv",row.names=FALSE,na="")
+write.csv(totalRevs,"output/gov-revenue-percent-gdp.csv",row.names=FALSE,na="")
