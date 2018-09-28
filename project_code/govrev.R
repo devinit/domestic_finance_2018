@@ -40,7 +40,6 @@ weo = read.csv(data_url,sep="\t",na.strings=c("","n/a","--"))
 # Set our desired indicators with nice names
 weo$indicator = NA
 weo$indicator[which(weo$Subject.Descriptor== "General government revenue" & weo$Units == "National currency")] = "value.ncu"
-weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product, constant prices" & weo$Units == "National currency")] = "gdp.current.ncu"
 
 # Grab just those indicators and relevant columns
 indicators = subset(weo,!is.na(indicator))
@@ -77,18 +76,50 @@ budget_type = function(years,estimates){
   return(results)
 }
 
-keep = c("WEO.Country.Code","ISO","Country","year","Estimates.Start.After","value.ncu","gdp.current.ncu")
+keep = c("WEO.Country.Code","ISO","Country","year","Estimates.Start.After","value.ncu")
 indicators.l = indicators.l[,keep]
-names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","Estimates.Start.After","value.ncu","gdp.current.ncu")
+names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","Estimates.Start.After","value.ncu")
 indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
 adv = merge(indicators.l,id.map,by="weo_country_code")
 adv$value.ncu = adv$value.ncu * 1000000000
+adv$budget.type = budget_type(adv$year, adv$Estimates.Start.After)
+adv.rev = adv[c("di_id","year","value.ncu","budget.type")]
+adv.rev = subset(adv.rev, !(di_id %in% unique(totalRevGrants$di_id)))
+
+#### GDP ####
+# Set our desired indicators with nice names
+weo$indicator = NA
+weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product, constant prices" & weo$Units == "National currency")] = "gdp.current.ncu"
+
+# Grab just those indicators and relevant columns
+indicators = subset(weo,!is.na(indicator))
+keep = c("WEO.Country.Code","ISO","Country","indicator","Estimates.Start.After",paste0("X",c(1981:2023)))
+indicators = indicators[,keep]
+
+# Dataset has commas in numbers, which need to be removed and parsed as numbers
+indicators[,paste0("X",c(1981:2023))] = as.numeric(sapply(indicators[,paste0("X",c(1981:2023))],gsub,pattern=",",replacement=""))
+
+# From reshape2 package, melt turns dataset as long as it can go
+indicators.m = melt(indicators,id.vars=c("WEO.Country.Code","ISO","Country","indicator","Estimates.Start.After"))
+
+# dcast takes a molten dataframe and reshapes it given a formula, here we're recasting long
+indicators.l = dcast(indicators.m,WEO.Country.Code+ISO+Country+variable+Estimates.Start.After~indicator)
+
+# Remove the leading X now that year is no longer a variable name
+indicators.l$year = substr(indicators.l$variable,2,5)
+indicators.l$variable = NULL
+
+# Reorder by country and year
+indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
+
+keep = c("WEO.Country.Code","ISO","Country","year","Estimates.Start.After","gdp.current.ncu")
+indicators.l = indicators.l[,keep]
+names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","Estimates.Start.After","gdp.current.ncu")
+indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
+adv = merge(indicators.l,id.map,by="weo_country_code")
 adv$gdp.current.ncu = adv$gdp.current.ncu * 1000000000
 adv$budget.type = budget_type(adv$year, adv$Estimates.Start.After)
 gdp = adv[c("di_id","year","gdp.current.ncu")]
-gdp = gdp[complete.cases(gdp),]
-adv.rev = adv[c("di_id","year","value.ncu","budget.type")]
-adv.rev = subset(adv.rev, !(di_id %in% unique(totalRevGrants$di_id)))
 
 totalRevGrants <- rbind(totalRevGrants,adv.rev)
 totalRevs <- rbind(totalRevs,adv.rev)
