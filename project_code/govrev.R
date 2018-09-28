@@ -86,14 +86,15 @@ adv$value.ncu = adv$value.ncu * 1000000000
 adv$gdp.current.ncu = adv$gdp.current.ncu * 1000000000
 adv$budget.type = budget_type(adv$year, adv$Estimates.Start.After)
 gdp = adv[c("di_id","year","gdp.current.ncu")]
+gdp = gdp[complete.cases(gdp),]
 adv.rev = adv[c("di_id","year","value.ncu","budget.type")]
 adv.rev = subset(adv.rev, !(di_id %in% unique(totalRevGrants$di_id)))
 
 totalRevGrants <- rbind(totalRevGrants,adv.rev)
 totalRevs <- rbind(totalRevs,adv.rev)
 
-totalRevGrants = merge(totalRevGrants,gdp,by=c("di_id","year"))
-totalRevs = merge(totalRevs,gdp,by=c("di_id","year"))
+totalRevGrants = merge(totalRevGrants,gdp,by=c("di_id","year"),all.x=T)
+totalRevs = merge(totalRevs,gdp,by=c("di_id","year"),all.x=T)
 
 totalRevGrants$value = totalRevGrants$value.ncu/totalRevGrants$gdp.current.ncu
 totalRevs$value = totalRevs$value.ncu/totalRevs$gdp.current.ncu
