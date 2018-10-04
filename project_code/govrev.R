@@ -132,6 +132,9 @@ totalRevs = merge(totalRevs,gdp,by=c("di_id","year"),all.x=T)
 totalRevGrants$value = (totalRevGrants$value.ncu/totalRevGrants$gdp.current.ncu)*100
 totalRevs$value = (totalRevs$value.ncu/totalRevs$gdp.current.ncu)*100
 
+write.csv(totalRevGrants,"output/total-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
+write.csv(totalRevs,"output/gov-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
+
 keep = c("di_id","year","value","budget.type")
 totalRevGrants = totalRevGrants[,keep]
 totalRevs = totalRevs[,keep]
