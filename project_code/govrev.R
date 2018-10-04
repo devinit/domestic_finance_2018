@@ -121,6 +121,8 @@ adv$gdp.current.ncu = adv$gdp.current.ncu * 1000000000
 adv$budget.type = budget_type(adv$year, adv$Estimates.Start.After)
 gdp = adv[c("di_id","year","gdp.current.ncu")]
 
+write.csv(gdp,"imf_weo_gdp.csv",na="",row.names=F)
+
 totalRevGrants <- rbind(totalRevGrants,adv.rev)
 totalRevs <- rbind(totalRevs,adv.rev)
 
