@@ -123,8 +123,8 @@ keep = c("di_id","year","constant.2011.ppp.per.current.ncu")
 mult2 = mult2[keep]
 mult = merge(mult,mult2)
 # Not sure if this is still required
-mult$constant.2016.usd.per.current.ncu[which(mult$di_id=="SY")] <- 1
-mult$constant.2011.ppp.per.current.ncu[which(mult$di_id=="SY")] <- 1
+# mult$constant.2016.usd.per.current.ncu[which(mult$di_id=="SY")] <- 1
+# mult$constant.2011.ppp.per.current.ncu[which(mult$di_id=="SY")] <- 1
 
 if("value-ncu" %in% colnames(df)){
   names(df)[names(df)=="value-ncu"] <- "value.ncu"

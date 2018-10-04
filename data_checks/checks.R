@@ -25,6 +25,8 @@ df <- read.csv("output/domestic.csv",colClasses=c("character","numeric","charact
 l1s = subset(df,!is.na(l1) & is.na(l2))
 invalid_l1s = subset(l1s,is.na(value.ncu))
 all_three = data.table(invalid_l1s)[,.(count=nrow(.SD)),by=.(di_id,year,budget.type)]
+all_three = subset(all_three,count<3)
+invalid_l1s = merge(invalid_l1s,all_three)
 write.csv(invalid_l1s, "data_checks/missing_l1s.csv")
 
 # # Per capita stuff

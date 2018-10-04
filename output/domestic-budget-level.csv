@@ -85,7 +85,7 @@
 "business-profit-tax","FALSE",4,"Business Profit tax",
 "business-tax","FALSE",4,"Business Tax",
 "capital","FALSE",2,"Capital",
-"capital-expenditure","FALSE",2,"Capital Expenditure",
+"capital-expenditure","FALSE",2,"Capital expenditure",
 "capital-expenditure-and-net-lending","FALSE",2,"Capital Expenditure and Net Lending",
 "capital-expenditures","FALSE",2,"Capital Expenditures",
 "capital-gain-tax","FALSE",5,"Capital Gain Tax",
@@ -118,7 +118,7 @@
 "central-government-collected","FALSE",4,"Central government collected",
 "change-in-accrued-interest","FALSE",2,"Change in Accrued Interest",
 "change-in-amortization-arrears","FALSE",3,"Change in Amortization Arrears",
-"change-in-arrears","FALSE",2,"Change In Arrears","grey-mid"
+"change-in-arrears","FALSE",2,"Change in Arrears","grey-mid"
 "change-in--arrears","FALSE",3,"Change in  arrears",
 "change-in-arrears-and-float","FALSE",3,"Change In Arrears And Float",
 "change-in-caital-arrears","FALSE",3,"Change in caital arrears",
@@ -200,7 +200,7 @@
 "currency-and-deposits","FALSE",3,"Currency and Deposits",
 "current","FALSE",3,"Current",
 "current-charges-on-public-debt","FALSE",3,"Current Charges on Public Debt",
-"current-expenditure","FALSE",2,"Current expenditure",
+"current-expenditure","FALSE",2,"Current Expenditure",
 "current-grants","FALSE",3,"Current Grants",
 "current-grants-cash","FALSE",3,"Current grants (cash)",
 "current-maintenance","FALSE",3,"Current Maintenance",
@@ -744,7 +744,7 @@
 "net-commercial-bank-credit","FALSE",3,"Net Commercial Bank Credit",
 "net-domestic-finance","FALSE",2,"Net Domestic Finance",
 "net-domestic-finance-of-the-central-government","FALSE",3,"Net Domestic Finance of the Central Government",
-"net-domestic-financing","FALSE",2,"Net Domestic Financing",
+"net-domestic-financing","FALSE",2,"Net domestic financing",
 "net-errors-and-omissions","FALSE",2,"Net Errors and Omissions","grey-mid"
 "net-exceptional-financing","FALSE",2,"Net exceptional financing",
 "net-external-finance","FALSE",2,"Net external Finance",
@@ -758,7 +758,7 @@
 "net-inkind-us-loans","FALSE",3,"Net In-Kind U.S. Loans",
 "net-issuance-of-bonds","FALSE",3,"Net Issuance of Bonds",
 "netlending","FALSE",2,"Net-lending",
-"net-lending","FALSE",2,"Net lending",
+"net-lending","FALSE",2,"Net Lending",
 "net-longterm-borrowing","FALSE",2,"Net Long-Term Borrowing",
 "net-national-bank-of-georgia-credit","FALSE",3,"Net National Bank of Georgia Credit",
 "net-revenue-from-oil","FALSE",4,"Net Revenue from Oil",
@@ -918,6 +918,7 @@
 "other-financing","FALSE",2,"other financing","grey-mid"
 "other-financing-6","FALSE",2,"Other financing 6/",
 "other-financing-net-of-which","FALSE",3,"Other financing (net), of which:",
+"other-flows","FALSE",2,"Other flows",
 "other-foreign-finance","FALSE",3,"Other Foreign Finance",
 "other-good-and-service-taxed","FALSE",4,"Other good and service taxed",
 "other-goods-and-services","FALSE",3,"Other Goods and Services",
@@ -1124,7 +1125,7 @@
 "real-estate-transaction-registration","FALSE",5,"Real estate transaction registration",
 "recovered-funds","FALSE",3,"Recovered Funds",
 "recurrent-departmental-charges","FALSE",3,"Recurrent Departmental Charges",
-"recurrent-expenditure","FALSE",2,"Recurrent expenditure",
+"recurrent-expenditure","FALSE",2,"Recurrent Expenditure",
 "recurrent-expenditures","FALSE",2,"Recurrent Expenditures",
 "referendum-costs","FALSE",4,"Referendum Costs",
 "refinancing-of-development-finance-corporation","FALSE",3,"Refinancing Of Development Finance Corporation",
@@ -1164,7 +1165,7 @@
 "retirement-funds-employer-contribution","FALSE",3,"Retirement Funds Employer Contribution",
 "retrocession-loans","FALSE",3,"Retrocession Loans",
 "returned-letters-of-credit","FALSE",2,"Returned Letters of Credit",
-"revenue","FALSE",2,"Revenue","red-high"
+"revenue","FALSE",2,"revenue","red-high"
 "revenue-equalization-and-reserve-fund","FALSE",3,"Revenue Equalization And Reserve Fund",
 "revenue-from-goods","FALSE",4,"Revenue from Goods",
 "revenue-from-natural-resources-and-telecoms","FALSE",4,"Revenue from natural resources and telecoms",
@@ -1370,7 +1371,7 @@
 "to-nonresidents","FALSE",4,"to Nonresidents",
 "to-residents","FALSE",4,"to Residents",
 "to-statutory-funds","FALSE",4,"To Statutory Funds",
-"total-expenditure","FALSE",1,"Total Expenditure","purple-high"
+"total-expenditure","FALSE",1,"Total expenditure","purple-high"
 "total-revenue-and-grants","FALSE",1,"Total revenue and grants","purple-high"
 "tourism--8-bed-tax","FALSE",5,"Tourism ($ 8 bed tax)",
 "tourism-goods-and-services-tax","FALSE",5,"Tourism Goods and Services Tax",
