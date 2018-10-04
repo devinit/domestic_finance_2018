@@ -19,8 +19,14 @@ total_rev_large = total_rev_large[order(-total_rev_large$value),]
 write.csv(gov_rev_large,"data_checks/gov_rev_large.csv")
 write.csv(total_rev_large,"data_checks/total_rev_large.csv")
 
-# Per capita stuff
+# Has every country got 3 l1s?
 
-govt_spend_pc = read.csv("output/govt_spend_pc.csv", na.strings = "")
-non_grant_pc = read.csv("output/non-grant-revenue-ppp-capita.csv", na.strings="")
-total_rev_pc = read.csv("output/total-revenue-ppp-capita.csv", na.strings="")
+df <- read.csv("output/domestic.csv",colClasses=c("character","numeric","character","character","character","character","character","character","character","numeric","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
+l1s = subset(df,!is.na(l1) & is.na(l2))
+unique_l1s = unique(l1s[c("di_id","year","budget.type","l1","value.ncu")])
+
+# # Per capita stuff
+# 
+# govt_spend_pc = read.csv("output/govt_spend_pc.csv", na.strings = "")
+# non_grant_pc = read.csv("output/non-grant-revenue-ppp-capita.csv", na.strings="")
+# total_rev_pc = read.csv("output/total-revenue-ppp-capita.csv", na.strings="")
