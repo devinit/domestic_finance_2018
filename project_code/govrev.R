@@ -89,7 +89,7 @@ adv.rev = subset(adv.rev, !(di_id %in% unique(totalRevGrants$di_id)))
 #### GDP ####
 # Set our desired indicators with nice names
 weo$indicator = NA
-weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product, constant prices" & weo$Units == "National currency")] = "gdp.current.ncu"
+weo$indicator[which(weo$Subject.Descriptor== "Gross domestic product, current prices" & weo$Units == "National currency")] = "gdp.current.ncu"
 
 # Grab just those indicators and relevant columns
 indicators = subset(weo,!is.na(indicator))
