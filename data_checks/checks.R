@@ -7,9 +7,9 @@ lapply(list.of.packages, require, character.only=T)
 wd = "~/git/domestic_finance_2018"
 setwd(wd)
 
-gov_rev = read.csv("output/gov-revenue-percent-gdp_check.csv", na.strings = "")
+gov_rev = read.csv("data_checks/gov-revenue-percent-gdp_check.csv", na.strings = "")
 gov_rev_large = subset(gov_rev, value > 110)
-total_rev = read.csv("output/total-revenue-percent-gdp_check.csv", na.strings = "")
+total_rev = read.csv("data_checks/total-revenue-percent-gdp_check.csv", na.strings = "")
 total_rev_large = subset(total_rev, value > 110)
 grants_pct = read.csv("output/grants-percent-total-revenue.csv", na.strings = "")
 grants_pct_large = subset(grants_pct, value > 110)

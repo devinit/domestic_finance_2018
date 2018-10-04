@@ -46,6 +46,9 @@ indicators.l$variable = NULL
 
 # Reorder by country and year
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
+
+# Currency devaluation adjustment
+indicators.l$current_ncu_gdp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] = indicators.l$current_ncu_gdp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] * 10000
 # Now that we're reordered, calculate exchange rate
 indicators.l$usd.per.ncu = indicators.l$current_usd_gdp/indicators.l$current_ncu_gdp
 

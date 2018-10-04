@@ -112,6 +112,9 @@ indicators.l$variable = NULL
 # Reorder by country and year
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
 
+indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] = indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] * 10000
+
+
 keep = c("WEO.Country.Code","ISO","Country","year","Estimates.Start.After","gdp.current.ncu")
 indicators.l = indicators.l[,keep]
 names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","Estimates.Start.After","gdp.current.ncu")
@@ -119,7 +122,9 @@ indicators.l$weo_country_code = unfactor(indicators.l$weo_country_code)
 adv = merge(indicators.l,id.map,by="weo_country_code")
 adv$gdp.current.ncu = adv$gdp.current.ncu * 1000000000
 adv$budget.type = budget_type(adv$year, adv$Estimates.Start.After)
+
 gdp = adv[c("di_id","year","gdp.current.ncu")]
+
 
 write.csv(gdp,"imf_weo_gdp.csv",na="",row.names=F)
 
@@ -132,8 +137,8 @@ totalRevs = merge(totalRevs,gdp,by=c("di_id","year"),all.x=T)
 totalRevGrants$value = (totalRevGrants$value.ncu/totalRevGrants$gdp.current.ncu)*100
 totalRevs$value = (totalRevs$value.ncu/totalRevs$gdp.current.ncu)*100
 
-write.csv(totalRevGrants,"output/total-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
-write.csv(totalRevs,"output/gov-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
+write.csv(totalRevGrants,"data_checks/total-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
+write.csv(totalRevs,"data_checks/gov-revenue-percent-gdp_check.csv",row.names=FALSE,na="")
 
 keep = c("di_id","year","value","budget.type")
 totalRevGrants = totalRevGrants[,keep]
