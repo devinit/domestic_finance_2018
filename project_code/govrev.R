@@ -127,8 +127,8 @@ totalRevs <- rbind(totalRevs,adv.rev)
 totalRevGrants = merge(totalRevGrants,gdp,by=c("di_id","year"),all.x=T)
 totalRevs = merge(totalRevs,gdp,by=c("di_id","year"),all.x=T)
 
-totalRevGrants$value = totalRevGrants$value.ncu/totalRevGrants$gdp.current.ncu
-totalRevs$value = totalRevs$value.ncu/totalRevs$gdp.current.ncu
+totalRevGrants$value = (totalRevGrants$value.ncu/totalRevGrants$gdp.current.ncu)*100
+totalRevs$value = (totalRevs$value.ncu/totalRevs$gdp.current.ncu)*100
 
 keep = c("di_id","year","value","budget.type")
 totalRevGrants = totalRevGrants[,keep]
