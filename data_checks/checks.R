@@ -14,8 +14,8 @@ total_rev_large = subset(total_rev, value > 110)
 grants_pct = read.csv("output/grants-percent-total-revenue.csv", na.strings = "")
 grants_pct_large = subset(grants_pct, value > 110)
 
-gov_rev_large = gov_rev_large[-order(gov_rev_large$value),]
-total_rev_large = total_rev_large[-order(total_rev_large$value),]
+gov_rev_large = gov_rev_large[order(-gov_rev_large$value),]
+total_rev_large = total_rev_large[order(-total_rev_large$value),]
 write.csv(gov_rev_large,"data_checks/gov_rev_large.csv")
 write.csv(total_rev_large,"data_checks/total_rev_large.csv")
 
