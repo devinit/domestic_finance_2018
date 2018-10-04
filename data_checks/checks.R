@@ -23,7 +23,9 @@ write.csv(total_rev_large,"data_checks/total_rev_large.csv")
 
 df <- read.csv("output/domestic.csv",colClasses=c("character","numeric","character","character","character","character","character","character","character","numeric","numeric","numeric"), header = TRUE,sep=",",na.strings="",stringsAsFactors=FALSE)
 l1s = subset(df,!is.na(l1) & is.na(l2))
-unique_l1s = unique(l1s[c("di_id","year","budget.type","l1","value.ncu")])
+invalid_l1s = subset(l1s,is.na(value.ncu))
+all_three = data.table(invalid_l1s)[,.(count=nrow(.SD)),by=.(di_id,year,budget.type)]
+write.csv(invalid_l1s, "data_checks/missing_l1s.csv")
 
 # # Per capita stuff
 # 
