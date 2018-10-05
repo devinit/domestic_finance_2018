@@ -1,4 +1,4 @@
-list.of.packages <- c("data.table")
+list.of.packages <- c("data.table","varhandle")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only=T)
@@ -189,4 +189,7 @@ levels <- merge(
 levels <- levels[order(levels$id)[!duplicated(sort(levels$id))],]
 new.levels <- rbind(levels,sectoral)
 new.levels <- unique(new.levels)
+# Color correction
+new.levels$color = unfactor(new.levels$color)
+new.levels$color[which(new.levels$id=="capital-expenditure" & new.levels$level==2)] = "orange-darker"
 write.csv(new.levels,"domestic-budget-level.csv",row.names=FALSE,na="")
