@@ -6,8 +6,7 @@ lapply(list.of.packages, require, character.only=T)
 wd <- "~/git/domestic_finance_2018"
 setwd(wd)
 source("project_code/connect.R")
-old.levels = ddw("reference.di_domestic_budget_level")
-old.levels$row_id = NULL
+old.levels = read.csv("https://raw.githubusercontent.com/devinit/datahub-cms/master/country-profile/domestic-budget-level.csv",na.strings="")
 dbDisconnect(con)
 
 wd <- "~/git/domestic_finance_2018/output"

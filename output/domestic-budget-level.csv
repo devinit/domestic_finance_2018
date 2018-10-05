@@ -1,4 +1,4 @@
-"id","sectoral","level","name","color_id"
+"id","sectoral","level","name","color"
 "account-payables","FALSE",3,"Account payables",
 "accounts-payable","FALSE",3,"Accounts Payable",
 "accumulation-of-arrears","FALSE",2,"Accumulation of arrears",
@@ -10,8 +10,8 @@
 "additional-finance","FALSE",3,"Additional Finance",
 "adefa-s-a-nd-others","FALSE",4,"Adefa S A Nd Others",
 "adjustment-aid","FALSE",4,"Adjustment Aid",
-"adjustment-for-heavily-indebted-poor-countriesmultilateral-debt-relief-initiative-debt-relief","FALSE",2,"Adjustment for Heavily Indebted Poor Countries/Multilateral Debt Relief Initiative Debt Relief","grey-mid"
-"adjustment-for-net-withheld-adjara-transfers","FALSE",2,"Adjustment for Net Withheld Adjara Transfers","grey-mid"
+"adjustment-for-heavily-indebted-poor-countriesmultilateral-debt-relief-initiative-debt-relief","FALSE",2,"Adjustment for Heavily Indebted Poor Countries/Multilateral Debt Relief Initiative Debt Relief","purple"
+"adjustment-for-net-withheld-adjara-transfers","FALSE",2,"Adjustment for Net Withheld Adjara Transfers","purple"
 "adjustment-on-other-receivables-and-payables","FALSE",2,"Adjustment on Other Receivables and Payables",
 "adjustments-and-fiscal-expenditure","FALSE",3,"Adjustments and Fiscal Expenditure",
 "administrative-fees","FALSE",4,"Administrative Fees",
@@ -84,8 +84,8 @@
 "business","FALSE",5,"Business",
 "business-profit-tax","FALSE",4,"Business Profit tax",
 "business-tax","FALSE",4,"Business Tax",
-"capital","FALSE",2,"Capital",
-"capital-expenditure","FALSE",2,"Capital expenditure",
+"capital","FALSE",2,"Capital","orange"
+"capital-expenditure","FALSE",2,"Capital expenditure","orange"
 "capital-expenditure-and-net-lending","FALSE",2,"Capital Expenditure and Net Lending",
 "capital-expenditures","FALSE",2,"Capital Expenditures",
 "capital-gain-tax","FALSE",5,"Capital Gain Tax",
@@ -101,8 +101,8 @@
 "carry-over-expenditure","FALSE",2,"Carry Over Expenditure",
 "cash-account","FALSE",3,"cash account",
 "cash-and-deposits","FALSE",3,"Cash and deposits",
-"cash-basis-adjustment","FALSE",2,"Cash Basis Adjustment","grey-mid"
-"cash-float-and-discrepancy","FALSE",2,"Cash Float and Discrepancy","grey-mid"
+"cash-basis-adjustment","FALSE",2,"Cash Basis Adjustment","purple"
+"cash-float-and-discrepancy","FALSE",2,"Cash Float and Discrepancy","purple"
 "cash-fuel-subsidies","FALSE",4,"Cash Fuel Subsidies",
 "census","FALSE",4,"Census",
 "central-bank","FALSE",3,"Central bank",
@@ -118,7 +118,7 @@
 "central-government-collected","FALSE",4,"Central government collected",
 "change-in-accrued-interest","FALSE",2,"Change in Accrued Interest",
 "change-in-amortization-arrears","FALSE",3,"Change in Amortization Arrears",
-"change-in-arrears","FALSE",2,"Change in Arrears","grey-mid"
+"change-in-arrears","FALSE",2,"Change in Arrears","purple"
 "change-in--arrears","FALSE",3,"Change in  arrears",
 "change-in-arrears-and-float","FALSE",3,"Change In Arrears And Float",
 "change-in-caital-arrears","FALSE",3,"Change in caital arrears",
@@ -135,11 +135,11 @@
 "change-in-non-trust-assets","FALSE",2,"Change in Non- Trust Assets",
 "change-in-outstanding-letters-of-credit","FALSE",2,"Change in Outstanding Letters of Credit",
 "change-in-sinking-fund-net","FALSE",2,"Change in Sinking Fund (Net)",
-"change-in-social-fund-cash-balance","FALSE",2,"Change in Social Fund Cash Balance","grey-mid"
+"change-in-social-fund-cash-balance","FALSE",2,"Change in Social Fund Cash Balance","purple"
 "change-in-the-stock-of-change","FALSE",2,"Change in the stock of change",
 "change-in-unpaid-invoices","FALSE",2,"Change in Unpaid Invoices",
 "changes-in-arrears","FALSE",3,"Changes In Arrears",
-"check-float-plus-discrepancy","FALSE",2,"Check float Plus Discrepancy","grey-mid"
+"check-float-plus-discrepancy","FALSE",2,"Check float Plus Discrepancy","purple"
 "cigarette-tax","FALSE",5,"Cigarette Tax",
 "citizenship-by-investment","FALSE",4,"Citizenship by investment",
 "civil-expenditure","FALSE",4,"Civil Expenditure",
@@ -172,7 +172,7 @@
 "conditional-grants","FALSE",5,"Conditional Grants",
 "conditional-transfers","FALSE",5,"Conditional transfers",
 "consolidated-fund","FALSE",3,"Consolidated Fund",
-"consolidated-investment-fund","FALSE",2,"Consolidated Investment Fund","grey-mid"
+"consolidated-investment-fund","FALSE",2,"Consolidated Investment Fund","purple"
 "consolidation-bonds","FALSE",3,"Consolidation (Bonds)",
 "constitutional-reform","FALSE",3,"Constitutional Reform",
 "consumption","FALSE",3,"Consumption",
@@ -231,7 +231,7 @@
 "debtrelief-financed","FALSE",4,"Debt-Relief Financed",
 "debt-relief-obtained","FALSE",3,"Debt relief Obtained",
 "debt-repurchase","FALSE",3,"Debt repurchase",
-"debt-rescheduling","FALSE",2,"Debt Rescheduling","grey-mid"
+"debt-rescheduling","FALSE",2,"Debt Rescheduling","purple"
 "debt-securities","FALSE",3,"Debt securities",
 "debt-securities-net","FALSE",4,"Debt securities (net)",
 "debt-service-relief","FALSE",3,"Debt Service Relief",
@@ -252,8 +252,8 @@
 "development","FALSE",3,"Development",
 "development-budget","FALSE",2,"Development Budget",
 "development-capital","FALSE",3,"Development Capital",
-"development-expenditure","FALSE",2,"Development Expenditure",
-"development-expenditure-and-net-lending","FALSE",2,"Development Expenditure And Net Lending",
+"development-expenditure","FALSE",2,"Development Expenditure","blue"
+"development-expenditure-and-net-lending","FALSE",2,"Development Expenditure And Net Lending","orange"
 "development-fund","FALSE",3,"Development fund",
 "diamond-and-other-mineral-royalties","FALSE",4,"Diamond and Other Mineral Royalties",
 "diamond-mining","FALSE",5,"Diamond Mining",
@@ -264,8 +264,8 @@
 "direct-taxes","FALSE",4,"Direct Taxes",
 "disbursement","FALSE",3,"Disbursement",
 "disbursements","FALSE",3,"Disbursements",
-"discrepancy","FALSE",2,"Discrepancy","grey-mid"
-"discrepancy-unexplained","FALSE",3,"Discrepancy (Unexplained)","grey-mid"
+"discrepancy","FALSE",2,"Discrepancy","purple"
+"discrepancy-unexplained","FALSE",3,"Discrepancy (Unexplained)","purple"
 "divestment-deposit-drawdown","FALSE",2,"divestment+ deposit drawdown",
 "divestmentprivatization-proceeds","FALSE",2,"Divestment/Privatization Proceeds",
 "dividend-and-interest-income","FALSE",4,"Dividend and Interest Income",
@@ -295,7 +295,7 @@
 "domestic-financed","FALSE",3,"Domestic Financed",
 "domestic-financed-reconstruction-expenditure","FALSE",4,"Domestic Financed Reconstruction Expenditure",
 "domestic-finance-inflows","FALSE",3,"Domestic Finance Inflows",
-"domestic-financing","FALSE",2,"Domestic Financing","red-high"
+"domestic-financing","FALSE",2,"Domestic Financing","red-dark"
 "domestic-funds","FALSE",3,"Domestic Funds",
 "domestic-incurrence-of-liabilities","FALSE",3,"Domestic Incurrence of Liabilities",
 "domestic-indirect-taxes","FALSE",5,"Domestic Indirect Taxes",
@@ -360,13 +360,13 @@
 "enviromental","FALSE",3,"Enviromental",
 "equity-and-investment-fund-shares","FALSE",3,"Equity and investment fund shares",
 "equity-investment","FALSE",2,"Equity Investment",
-"errors-and-omissions","FALSE",2,"Errors and omissions","grey-mid"
+"errors-and-omissions","FALSE",2,"Errors and omissions","purple"
 "estimated-sustainable-income","FALSE",4,"Estimated Sustainable Income",
 "eurobond","FALSE",3,"Eurobond",
 "exceptional-expenditure","FALSE",3,"Exceptional Expenditure",
 "exceptional--external-financing","FALSE",3,"Exceptional  External Financing",
 "exceptionalfinancing","FALSE",3,"Exceptional financing",
-"exceptional-financing","FALSE",2,"Exceptional Financing","grey-mid"
+"exceptional-financing","FALSE",2,"Exceptional Financing","purple"
 "exceptional-revenue","FALSE",4,"Exceptional revenue",
 "exceptional-revenue-from-the-mining-industry","FALSE",5,"Exceptional revenue from the mining industry",
 "exceptional-security","FALSE",4,"Exceptional Security",
@@ -398,7 +398,7 @@
 "external-assets","FALSE",3,"External Assets",
 "external-borrowing","FALSE",3,"External Borrowing",
 "external-debt-service","FALSE",3,"External debt service",
-"external-financing","FALSE",2,"External Financing","blue-high"
+"external-financing","FALSE",2,"External Financing","blue-dark"
 "external-incurrence-of-liabilities","FALSE",3,"External incurrence of liabilities",
 "external-interest","FALSE",4,"External Interest",
 "external-interest-payment-cash","FALSE",3,"External Interest Payment, Cash",
@@ -456,7 +456,7 @@
 "financial-liabilities","FALSE",2,"Financial liabilities",
 "financial-system","FALSE",3,"Financial System",
 "financial-transfer","FALSE",5,"Financial transfer",
-"financing","FALSE",1,"Financing","purple-high"
+"financing","FALSE",1,"Financing","purple-dark"
 "financing-arrangement-on-fuel-purchase","FALSE",3,"Financing Arrangement on Fuel Purchase",
 "financing-gap","FALSE",2,"Financing gap",
 "fines-and-forfeits","FALSE",5,"Fines and Forfeits",
@@ -531,7 +531,7 @@
 "grantfinanced","FALSE",3,"Grant-Financed",
 "grant-financed-reconstruction-expenditure","FALSE",4,"Grant Financed Reconstruction Expenditure",
 "grant-funded","FALSE",4,"Grant funded",
-"grants","FALSE",2,"Grants","blue-high"
+"grants","FALSE",2,"Grants","blue-dark"
 "grants-and-subsidies","FALSE",3,"Grants and subsidies",
 "grants-and-transfers","FALSE",3,"Grants and Transfers",
 "grants-current-excl-fonds-de-soutien-à-lénergie","FALSE",3,"Grants (current excl. Fonds de Soutien à l'Énergie)",
@@ -565,7 +565,7 @@
 "heavily-indebted-poor-countries-grant-relief","FALSE",3,"Heavily Indebted Poor Countries Grant Relief",
 "heavily-indebted-poor-countries-initiative-funded-expenditure","FALSE",2,"Heavily Indebted Poor Countries Initiative Funded Expenditure",
 "heavily-indebted-poor-countries-initiative-resources","FALSE",4,"Heavily Indebted Poor Countries Initiative Resources",
-"heavily-indebted-poor-countries-interim-relief","FALSE",2,"Heavily Indebted Poor Countries Interim Relief","grey-mid"
+"heavily-indebted-poor-countries-interim-relief","FALSE",2,"Heavily Indebted Poor Countries Interim Relief","purple"
 "heavily-indebted-poor-countries-multilateral","FALSE",3,"Heavily Indebted Poor Countries Multilateral",
 "hipc-grant-relief","FALSE",3,"Hipc Grant Relief",
 "hipcmdri-debt-relief","FALSE",4,"HIPC/MDRI Debt Relief",
@@ -612,9 +612,9 @@
 "income-tax-on-profits","FALSE",5,"Income Tax on Profits",
 "income-tax-on-wages-and-salaries","FALSE",5,"Income Tax on Wages and Salaries",
 "income-tax-paye","FALSE",5,"Income tax (PAYE)",
-"increase-in-expenditure-arrears","FALSE",2,"Increase in Expenditure Arrears","grey-mid"
+"increase-in-expenditure-arrears","FALSE",2,"Increase in Expenditure Arrears","purple"
 "increase-in-foreign-assets","FALSE",3,"Increase in foreign assets",
-"increase-in-principal-debt-arrears","FALSE",2,"Increase in Principal Debt Arrears","grey-mid"
+"increase-in-principal-debt-arrears","FALSE",2,"Increase in Principal Debt Arrears","purple"
 "independence-day-investment","FALSE",4,"Independence Day Investment",
 "indirect-and-other-taxes","FALSE",4,"Indirect and Other Taxes",
 "indirect-tax","FALSE",4,"Indirect Tax",
@@ -745,7 +745,7 @@
 "net-domestic-finance","FALSE",2,"Net Domestic Finance",
 "net-domestic-finance-of-the-central-government","FALSE",3,"Net Domestic Finance of the Central Government",
 "net-domestic-financing","FALSE",2,"Net domestic financing",
-"net-errors-and-omissions","FALSE",2,"Net Errors and Omissions","grey-mid"
+"net-errors-and-omissions","FALSE",2,"Net Errors and Omissions","purple"
 "net-exceptional-financing","FALSE",2,"Net exceptional financing",
 "net-external-finance","FALSE",2,"Net external Finance",
 "net-external-financing","FALSE",2,"Net External Financing",
@@ -758,7 +758,7 @@
 "net-inkind-us-loans","FALSE",3,"Net In-Kind U.S. Loans",
 "net-issuance-of-bonds","FALSE",3,"Net Issuance of Bonds",
 "netlending","FALSE",2,"Net-lending",
-"net-lending","FALSE",2,"Net Lending",
+"net-lending","FALSE",2,"Net Lending","orange"
 "net-longterm-borrowing","FALSE",2,"Net Long-Term Borrowing",
 "net-national-bank-of-georgia-credit","FALSE",3,"Net National Bank of Georgia Credit",
 "net-revenue-from-oil","FALSE",4,"Net Revenue from Oil",
@@ -830,7 +830,7 @@
 "oil-account-contribution-to-the-budget","FALSE",4,"Oil Account Contribution to The Budget",
 "oil-and-gas-revenue","FALSE",4,"Oil and Gas Revenue",
 "oil-and-gas-surcharges-and-other","FALSE",5,"Oil And Gas Surcharges And Other",
-"oil-bonuses","FALSE",2,"Oil Bonuses","grey-mid"
+"oil-bonuses","FALSE",2,"Oil Bonuses","purple"
 "oil-derivative-imports","FALSE",4,"Oil Derivative Imports",
 "oil-excises","FALSE",5,"Oil Excises",
 "oil-exports-revenues","FALSE",4,"Oil Exports Revenues",
@@ -901,9 +901,9 @@
 "other-domnestically-financed","FALSE",4,"Other Domnestically Financed",
 "other-earmarked-grants","FALSE",3,"Other earmarked grants",
 "other-excess-crude-account","FALSE",3,"Other Excess Crude Account",
-"other-expenditure","FALSE",2,"Other Expenditure","grey-mid"
-"other-expenditure-in-the-budget","FALSE",2,"Other Expenditure in The Budget",
-"other-expenditures","FALSE",2,"Other Expenditures",
+"other-expenditure","FALSE",2,"Other Expenditure","red"
+"other-expenditure-in-the-budget","FALSE",2,"Other Expenditure in The Budget","red"
+"other-expenditures","FALSE",2,"Other Expenditures","red"
 "other-expendse","FALSE",3,"Other Expendse",
 "other-expense","FALSE",2,"Other expense",
 "other-expenses","FALSE",3,"Other Expenses",
@@ -913,9 +913,9 @@
 "other-federal-government-revenue","FALSE",4,"Other Federal government revenue",
 "other-federal-government-taxes","FALSE",4,"Other Federal government taxes",
 "other-federal-taxes","FALSE",5,"Other Federal Taxes",
-"other-finance","FALSE",2,"Other Finance","grey-mid"
+"other-finance","FALSE",2,"Other Finance","purple"
 "other-financial-assets","FALSE",3,"Other Financial Assets",
-"other-financing","FALSE",2,"other financing","grey-mid"
+"other-financing","FALSE",2,"other financing","purple"
 "other-financing-6","FALSE",2,"Other financing 6/",
 "other-financing-net-of-which","FALSE",3,"Other financing (net), of which:",
 "other-flows","FALSE",2,"Other flows",
@@ -960,7 +960,7 @@
 "other-resource-revenue","FALSE",4,"Other Resource Revenue",
 "other-revenue","FALSE",3,"Other Revenue",
 "other-revenues","FALSE",3,"Other Revenues",
-"others","FALSE",2,"Others","grey-mid"
+"others","FALSE",2,"Others","purple"
 "other-sources","FALSE",3,"Other Sources",
 "other-state-government-revenue","FALSE",4,"Other State government revenue",
 "other-subsidies","FALSE",4,"Other Subsidies",
@@ -988,7 +988,7 @@
 "ownsource-revenue","FALSE",3,"Own-Source Revenue",
 "paid","FALSE",4,"Paid",
 "panama-canal-fees--dividends","FALSE",4,"Panama Canal Fees & Dividends",
-"paris-club-rescheduling","FALSE",2,"Paris Club Rescheduling","grey-mid"
+"paris-club-rescheduling","FALSE",2,"Paris Club Rescheduling","purple"
 "payable-by-corporations-and-other-enterprises","FALSE",5,"Payable by corporations and other enterprises",
 "payable-by-individuals","FALSE",5,"Payable by individuals",
 "pay-and-allowances","FALSE",3,"Pay And Allowances",
@@ -1029,7 +1029,7 @@
 "personnel-expenditure","FALSE",3,"Personnel Expenditure",
 "petrocaribe","FALSE",4,"Petrocaribe",
 "petrocaribe-projects","FALSE",3,"Petrocaribe Projects",
-"petrocaribe-savings","FALSE",2,"Petrocaribe Savings","grey-mid"
+"petrocaribe-savings","FALSE",2,"Petrocaribe Savings","purple"
 "petroleum-fund-withdrawals","FALSE",3,"Petroleum Fund Withdrawals",
 "petroleum-operations","FALSE",5,"Petroleum Operations",
 "petroleum-product-price-subsidies","FALSE",2,"Petroleum Product Price Subsidies",
@@ -1051,12 +1051,12 @@
 "private-financing","FALSE",3,"Private Financing",
 "private-mining-companies","FALSE",4,"Private Mining Companies",
 "private-sector","FALSE",3,"Private Sector",
-"privatization","FALSE",2,"Privatization","grey-mid"
+"privatization","FALSE",2,"Privatization","purple"
 "privatization-and-longterm-lease-of-fixed-assets","FALSE",2,"Privatization and Long-Term Lease Of Fixed Assets",
 "privatization-and-other-exceptional-receipts8","FALSE",3,"Privatization and other exceptional receipts8",
 "privatization-and-other-extraordinary-receipts","FALSE",2,"Privatization and Other Extraordinary Receipts",
-"privatization-proceeds","FALSE",2,"Privatization proceeds","grey-mid"
-"privatization-receipts","FALSE",2,"Privatization Receipts","grey-mid"
+"privatization-proceeds","FALSE",2,"Privatization proceeds","purple"
+"privatization-receipts","FALSE",2,"Privatization Receipts","purple"
 "privatization-revenues","FALSE",3,"Privatization Revenues",
 "privatizations-and-other-sale-of-assets","FALSE",3,"Privatizations And Other Sale Of Assets",
 "production-and-consumption","FALSE",4,"Production and consumption",
@@ -1125,7 +1125,7 @@
 "real-estate-transaction-registration","FALSE",5,"Real estate transaction registration",
 "recovered-funds","FALSE",3,"Recovered Funds",
 "recurrent-departmental-charges","FALSE",3,"Recurrent Departmental Charges",
-"recurrent-expenditure","FALSE",2,"Recurrent Expenditure",
+"recurrent-expenditure","FALSE",2,"Recurrent Expenditure","green"
 "recurrent-expenditures","FALSE",2,"Recurrent Expenditures",
 "referendum-costs","FALSE",4,"Referendum Costs",
 "refinancing-of-development-finance-corporation","FALSE",3,"Refinancing Of Development Finance Corporation",
@@ -1150,14 +1150,14 @@
 "reserve-and-contingency-funds","FALSE",2,"Reserve and Contingency Funds",
 "reserve-fund","FALSE",4,"Reserve Fund",
 "reserves","FALSE",2,"Reserves",
-"residual-financing-neederrors-and-omissions","FALSE",2,"Residual Financing Need/Errors And Omissions","grey-mid"
-"residual-gap","FALSE",2,"Residual Gap","grey-mid"
+"residual-financing-neederrors-and-omissions","FALSE",2,"Residual Financing Need/Errors And Omissions","purple"
+"residual-gap","FALSE",2,"Residual Gap","purple"
 "resolution-of-demestic-arrears","FALSE",3,"Resolution of demestic arrears",
 "resort-lease-rent","FALSE",4,"Resort lease rent",
 "resource-extraction-tax","FALSE",4,"Resource extraction tax",
 "resource-revenue","FALSE",3,"Resource Revenue",
 "rest-of-the-general-government","FALSE",3,"Rest of the general government",
-"restructured-bonds","FALSE",2,"Restructured Bonds","grey-mid"
+"restructured-bonds","FALSE",2,"Restructured Bonds","purple"
 "restructuring-and-net-lending","FALSE",2,"Restructuring and Net Lending",
 "restructuring-cost-of-public-enterprises","FALSE",2,"Restructuring Cost of Public Enterprises",
 "retail-sales-tax","FALSE",4,"Retail Sales Tax",
@@ -1165,7 +1165,7 @@
 "retirement-funds-employer-contribution","FALSE",3,"Retirement Funds Employer Contribution",
 "retrocession-loans","FALSE",3,"Retrocession Loans",
 "returned-letters-of-credit","FALSE",2,"Returned Letters of Credit",
-"revenue","FALSE",2,"revenue","red-high"
+"revenue","FALSE",2,"revenue","red-dark"
 "revenue-equalization-and-reserve-fund","FALSE",3,"Revenue Equalization And Reserve Fund",
 "revenue-from-goods","FALSE",4,"Revenue from Goods",
 "revenue-from-natural-resources-and-telecoms","FALSE",4,"Revenue from natural resources and telecoms",
@@ -1213,7 +1213,7 @@
 "security-issue","FALSE",3,"Security Issue",
 "sees","FALSE",4,"SEEs",
 "service-tax","FALSE",5,"Service tax",
-"settlement-of-payment-delays","FALSE",2,"Settlement of payment delays","grey-mid"
+"settlement-of-payment-delays","FALSE",2,"Settlement of payment delays","purple"
 "shared-infrastructure-and-social-spending","FALSE",4,"Shared Infrastructure and Social Spending",
 "short-term-external-debt","FALSE",4,"Short Term External Debt",
 "signature-bonus","FALSE",4,"Signature Bonus",
@@ -1285,7 +1285,7 @@
 "state-recurrent-expenditure-excl-social-fund-contributions","FALSE",2,"State recurrent Expenditure (excl. social fund contributions)",
 "states","FALSE",4,"States",
 "state-tax-revenue","FALSE",4,"State Tax Revenue",
-"statistical-discrepancy","FALSE",2,"Statistical discrepancy","grey-mid"
+"statistical-discrepancy","FALSE",2,"Statistical discrepancy","purple"
 "statistical-fee","FALSE",4,"Statistical Fee",
 "statutory-advances-from-beac","FALSE",3,"Statutory advances from BEAC",
 "statutory-authorities","FALSE",4,"Statutory Authorities",
@@ -1371,8 +1371,8 @@
 "to-nonresidents","FALSE",4,"to Nonresidents",
 "to-residents","FALSE",4,"to Residents",
 "to-statutory-funds","FALSE",4,"To Statutory Funds",
-"total-expenditure","FALSE",1,"Total expenditure","purple-high"
-"total-revenue-and-grants","FALSE",1,"Total revenue and grants","purple-high"
+"total-expenditure","FALSE",1,"Total expenditure","purple-dark"
+"total-revenue-and-grants","FALSE",1,"Total revenue and grants","purple-dark"
 "tourism--8-bed-tax","FALSE",5,"Tourism ($ 8 bed tax)",
 "tourism-goods-and-services-tax","FALSE",5,"Tourism Goods and Services Tax",
 "tourism-tax-6-green-tax-1","FALSE",5,"Tourism tax ($6 green tax) 1/",
@@ -1437,7 +1437,7 @@
 "unidentified-adjustment","FALSE",2,"Unidentified Adjustment",
 "unidentified-expenditure","FALSE",2,"Unidentified Expenditure",
 "unidentified-finance","FALSE",2,"Unidentified Finance",
-"unidentified-financing","FALSE",2,"Unidentified Financing","grey-mid"
+"unidentified-financing","FALSE",2,"Unidentified Financing","purple"
 "unidentified-measures","FALSE",2,"Unidentified measures",
 "union-government","FALSE",3,"Union Government",
 "unrecorded-expenditure","FALSE",2,"Unrecorded Expenditure",
@@ -1449,7 +1449,7 @@
 "use-of-goods-and-services","FALSE",3,"Use of goods and services",
 "use-of-goods-and-services-and-grants","FALSE",3,"Use of Goods and Services and Grants",
 "use-of-government-deposits","FALSE",3,"Use of Government Deposits",
-"use-of-national-bank-of-the-kyrgyz-republic-investments-abroad","FALSE",2,"Use of National Bank of The Kyrgyz Republic Investments Abroad","grey-mid"
+"use-of-national-bank-of-the-kyrgyz-republic-investments-abroad","FALSE",2,"Use of National Bank of The Kyrgyz Republic Investments Abroad","purple"
 "use-of-pecial-drawing-right--allocation","FALSE",3,"Use Of pecial Drawing Right  Allocation",
 "use-of-sovereign-wealth-fund-resources","FALSE",3,"Use of Sovereign Wealth Fund Resources",
 "use-of-trust-account-surpluses","FALSE",2,"Use of trust account surpluses",
@@ -1488,7 +1488,6 @@
 "withdrawals-above-estimated-sustainable-income","FALSE",4,"Withdrawals Above Estimated Sustainable Income",
 "withdrawals-from-trust-fund","FALSE",2,"Withdrawals from Trust Fund",
 "world-bank-sac","FALSE",4,"World Bank Sac",
-"crops","TRUE",3,"Crops",
 "abi-zonal-agricultural-research-and-development-institute","TRUE",3,"Abi Zonal Agricultural Research And Development Institute",
 "africa-development-bank","TRUE",5,"Africa Development Bank (401)",
 "africa-development-fund","TRUE",4,"Africa Development Fund (402)",
@@ -1498,7 +1497,7 @@
 "african-union","TRUE",5,"African Union",
 "agricultural-statistical-unit","TRUE",4,"Agricultural Statistical Unit",
 "agricultural-technology-and-agribusiness-advisory-services","TRUE",3,"Agricultural Technology And Agribusiness Advisory Services",
-"agriculture","TRUE",1,"Agriculture","yellow-mid"
+"agriculture","TRUE",1,"Agriculture","yellow-light"
 "agriculture-advisory-services","TRUE",3,"Agriculture Advisory Services",
 "agriculture-cluster-development-project","TRUE",4,"Agriculture Cluster Development Project",
 "agriculture-production-marketing-regulation","TRUE",4,"Agriculture Production, Marketing & Regulation",
@@ -1525,14 +1524,14 @@
 "community-health","TRUE",4,"Community Health",
 "community-mobilisation-and-empowerment---district-governments","TRUE",2,"Community Mobilisation And Empowerment - District Governments",
 "construction-of-ministry-of-agriculture-animal-industry","TRUE",4,"Construction Of Ministry Of Agriculture, Animal Industry",
-"water-management-and-development-project","TRUE",3,"Water Management And Development Project",
 "construction-of-specialised-neonatal-and-maternal-unit-in-mulago-hospital","TRUE",4,"Construction Of Specialised Neonatal And Maternal Unit In Mulago Hospital",
 "cour-supreme","TRUE",2,"Cour Supreme",
 "crop-disease-and-pest-control","TRUE",4,"Crop Disease And Pest Control",
 "crop-production-department","TRUE",4,"Crop Production Department",
 "crop-protection-department","TRUE",4,"Crop Protection Department",
+"crops","TRUE",3,"Crops",
 "dairy-development-authority","TRUE",3,"Dairy Development Authority",
-"defence","TRUE",1,"Defence","darkorange-mid"
+"defence","TRUE",1,"Defence","orange"
 "defence-equipment-project","TRUE",4,"Defence Equipment Project",
 "department-of-agribusiness","TRUE",4,"Department Of Agribusiness",
 "department-of-crop-regulation-and-certification","TRUE",4,"Department Of Crop Regulation And Certification",
@@ -1557,7 +1556,7 @@
 "domestic-interest","TRUE",2,"Domestic Interest",
 "domestic-interest-payments","TRUE",2,"Domestic Interest Payments",
 "eastern-africa-agricultural-productivity-adaptable-program","TRUE",3,"Eastern Africa Agricultural Productivity Adaptable Program",
-"education","TRUE",1,"Education","darkpurple-mid"
+"education","TRUE",1,"Education","purple"
 "education-service-commission","TRUE",3,"Education Service Commission",
 "education-standards-agency","TRUE",4,"Education Standards Agency",
 "emergency-construction-of-primary-schools","TRUE",4,"Emergency Construction Of Primary Schools",
@@ -1592,7 +1591,7 @@
 "headquarters","TRUE",3,"Headquarters",
 "headquarters","TRUE",4,"Headquarters",
 "headquarters-planning-and-policy","TRUE",3,"Headquarters, Planning And Policy",
-"health","TRUE",1,"Health","purple-mid"
+"health","TRUE",1,"Health","purple-light"
 "health-research","TRUE",3,"Health Research",
 "health-service-commission","TRUE",3,"Health Service Commission",
 "health-systems-development","TRUE",3,"Health Systems Development",
@@ -1602,16 +1601,15 @@
 "hoima-referral-hospital","TRUE",3,"Hoima Referral Hospital",
 "iceland","TRUE",5,"Iceland (516)",
 "improvement-of-food-security-in-cross-border-districts","TRUE",4,"Improvement Of Food Security In Cross Border Districts",
-"water-management-and-development-project-ii","TRUE",3,"Water Management And Development Project Ii",
 "improving-the-training-of-btvet-technical-instructors-health-tutors-secondary-teachers-in-uganda","TRUE",4,"Improving The Training Of Btvet Technical Instructors, Health Tutors & Secondary Teachers In Uganda",
 "increasing-mukene-for-human-consumption","TRUE",4,"Increasing Mukene For Human Consumption",
 "industrial-court","TRUE",3,"Industrial Court",
-"industry-energy-and-mining","TRUE",1,"Industry, Energy And Mining","orange-mid"
-"infrastructure","TRUE",1,"Infrastructure","darkyellow-high"
+"industry-energy-and-mining","TRUE",1,"Industry, Energy And Mining","orange-light"
+"infrastructure","TRUE",1,"Infrastructure","yellow-darker"
 "insitutional-support-to-moh","TRUE",4,"Insitutional Support To Moh",
 "institutional-capacity-building","TRUE",4,"Institutional Capacity Building",
 "integrated-production-and-pest-management","TRUE",4,"Integrated Production And Pest Management",
-"interest-payments","TRUE",1,"Interest Payments","darklightblue-high"
+"interest-payments","TRUE",1,"Interest Payments","blue-light"
 "internal-audit","TRUE",3,"Internal Audit",
 "internal-audit","TRUE",4,"Internal Audit",
 "internal-audit-department","TRUE",4,"Internal Audit Department",
@@ -1644,7 +1642,7 @@
 "lira-referral-hospital","TRUE",3,"Lira Referral Hospital",
 "livestock-disease-control","TRUE",4,"Livestock Disease Control",
 "livestock-health-and-entomology","TRUE",4,"Livestock Health And Entomology",
-"local-government-development","TRUE",1,"Local Government Development","darkpurple-high"
+"local-government-development","TRUE",1,"Local Government Development","purple-darker"
 "local-governments","TRUE",2,"Local Governments",
 "makerere-university","TRUE",3,"Makerere University",
 "makerere-university-business-school","TRUE",3,"Makerere University Business School",
@@ -1672,7 +1670,6 @@
 "ministere-des-infrastructures-des-transports-terrestres-et-du-desenclavement","TRUE",2,"Ministere Des Infrastructures, Des Transports Terrestres Et Du Desenclavement",
 "ministere-des-postes-et-des-telecommunications","TRUE",2,"Ministere Des Postes Et Des Telecommunications",
 "ministere-du-tourisme-et-des-transports-aeriens","TRUE",2,"Ministere Du Tourisme Et Des Transports Aeriens",
-"secondary-education","TRUE",4,"Secondary Education",
 "ministry-of-agriculture-animal-fisheries","TRUE",2,"Ministry Of Agriculture, Animal & Fisheries",
 "ministry-of-agriculture-animal-fisheries-coordination","TRUE",4,"Ministry Of Agriculture, Animal & Fisheries Coordination",
 "ministry-of-defence","TRUE",2,"Ministry Of Defence",
@@ -1709,7 +1706,7 @@
 "office-of-the-dgcd;-dsp-and-dl","TRUE",3,"Office Of The D/G&Cd; D/Sp And D/L",
 "operational-water-resources-management","TRUE",3,"Operational Water Resources Management",
 "organisation-of-petroleum-exporting-countries","TRUE",5,"Organisation Of Petroleum Exporting Countries (415)",
-"other","TRUE",1,"Other","grey-mid"
+"other","TRUE",1,"Other","purple"
 "other","TRUE",4,"Other",
 "other","TRUE",5,"Other",
 "pharmaceutical-and-other-supplies","TRUE",3,"Pharmaceutical And Other Supplies",
@@ -1745,10 +1742,11 @@
 "saudi-arabia","TRUE",5,"Saudi Arabia (540)",
 "school-community-water-idps","TRUE",3,"School & Community Water-Idps",
 "secondary-education","TRUE",2,"Secondary Education",
+"secondary-education","TRUE",4,"Secondary Education",
 "sector-monitoring-and-quality-assurance","TRUE",3,"Sector Monitoring And Quality Assurance",
-"security","TRUE",1,"Security","darkblue-high"
+"security","TRUE",1,"Security","blue-darker"
 "social-assistance-grant-for-empowerment","TRUE",3,"Social Assistance Grant For Empowerment",
-"social-protection","TRUE",1,"Social Protection","red-high"
+"social-protection","TRUE",1,"Social Protection","red-dark"
 "social-protection-for-vulnerable-groups","TRUE",2,"Social Protection For Vulnerable Groups",
 "soroti-referral-hospital","TRUE",3,"Soroti Referral Hospital",
 "south-korea","TRUE",5,"South Korea (526)",
@@ -1802,15 +1800,17 @@
 "urban-water-supply-sewerage","TRUE",3,"Urban Water Supply & Sewerage",
 "vegetable-oil-development-project-phase","TRUE",4,"Vegetable Oil Development Project-Phase 2",
 "wage","TRUE",4,"Wage",
-"wash","TRUE",1,"Wash","lightblue-mid"
-"water-and-sanitation","TRUE",1,"Water And Sanitation","blue-mid"
+"wash","TRUE",1,"Wash","blue-light"
+"water-and-sanitation","TRUE",1,"Water And Sanitation","blue-light"
 "water-and-sanitation-development-facility---central","TRUE",3,"Water And Sanitation Development Facility - Central",
 "water-and-sanitation-development-facility---east","TRUE",3,"Water And Sanitation Development Facility - East",
 "water-and-sanitation-development-facility-north","TRUE",3,"Water And Sanitation Development Facility-North",
 "water-and-sanitation-development-facility-south-west","TRUE",3,"Water And Sanitation Development Facility-South West",
 "water-for-production","TRUE",2,"Water For Production",
-"water-for-production","TRUE",3,"Water For Production",
+"water-for-production","TRUE",3," Water For Production",
 "water-for-production-project","TRUE",3,"Water For Production Project",
+"water-management-and-development-project","TRUE",3,"Water Management And Development Project",
+"water-management-and-development-project-ii","TRUE",3,"Water Management And Development Project Ii",
 "water-quality-management","TRUE",3,"Water Quality Management",
 "water-resources-management","TRUE",2,"Water Resources Management",
 "water-resources-monitoring-assessment","TRUE",3,"Water Resources Monitoring & Assessment",
