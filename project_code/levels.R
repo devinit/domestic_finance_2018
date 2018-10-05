@@ -192,4 +192,61 @@ new.levels <- unique(new.levels)
 # Color correction
 new.levels$color = unfactor(new.levels$color)
 new.levels$color[which(new.levels$id=="capital-expenditure" & new.levels$level==2)] = "orange-darker"
+new.levels$color[which(new.levels$id=="capital-expenditure-and-net-lending" & new.levels$level==2)] = "yellow"
+new.levels$color[which(new.levels$id=="current-expenditure" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="capital-expenditures" & new.levels$level==2)] = "blue-light"
+new.levels$color[which(new.levels$id=="recurrent-expenditures" & new.levels$level==2)] = "blue-darker"
+new.levels$color[which(new.levels$id=="investment-expenditure" & new.levels$level==2)] = "green-light"
+new.levels$color[which(new.levels$id=="contingency" & new.levels$level==2)] = "green-dark"
+new.levels$color[which(new.levels$id=="interest" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="road-fund" & new.levels$level==2)] = "purple-dark"
+
+new.levels$color[which(new.levels$id=="reserve-and-contingency-funds" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="other" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="social-protection-fund" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="public-service-restructuring" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="unidentified-measures" & new.levels$level==2)] = "grey"
+
+new.levels$color[which(new.levels$id=="returned-letters-of-credit" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="investment-expenditures" & new.levels$level==2)] = "red-light"
+
+new.levels$color[which(new.levels$id=="transfer-to-water-authority-of-jordan" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="transfer-to-national-electric-power-company" & new.levels$level==2)] = "red-light"
+
+new.levels$color[which(new.levels$id=="donor-project" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="contingency-spending" & new.levels$level==2)] = "red-light"
+
+new.levels$color[which(new.levels$id=="state-governments" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="municipal-governments" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="federal-government" & new.levels$level==2)] = "green-light"
+
+new.levels$color[which(new.levels$id=="social-security-transfers" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="reserves" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="repayment-of-guarantees" & new.levels$level==2)] = "green-light"
+
+new.levels$color[which(new.levels$id=="spending-from-excess-crude-account-sovereign-wealth-fund" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="state-and-local-government" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="federal-government-expenditure" & new.levels$level==2)] = "green-light"
+
+new.levels$color[which(new.levels$id=="special-accounts" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="road-and-special-funds" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="restructuring-cost-of-public-enterprises" & new.levels$level==2)] = "green-light"
+new.levels$color[which(new.levels$id=="petroleum-product-price-subsidies" & new.levels$level==2)] = "blue-light"
+new.levels$color[which(new.levels$id=="capital-transfers" & new.levels$level==2)] = "blue-darker"
+
+new.levels$color[which(new.levels$id=="sociocultural-expenditure-including-health-education" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="social-safety-net" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="public-investment" & new.levels$level==2)] = "green-light"
+new.levels$color[which(new.levels$id=="public-authorities-and-administration" & new.levels$level==2)] = "blue-light"
+new.levels$color[which(new.levels$id=="interest-expenditure" & new.levels$level==2)] = "blue-darker"
+new.levels$color[which(new.levels$id=="extrabudgetary-expenditure-financed-by-grants" & new.levels$level==2)] = "purple-light"
+
+new.levels$color[which(new.levels$id=="subsidies-expense" & new.levels$level==2)] = "grey"
+new.levels$color[which(new.levels$id=="social-benefits-expense" & new.levels$level==2)] = "red-light"
+new.levels$color[which(new.levels$id=="other-expense" & new.levels$level==2)] = "green-light"
+new.levels$color[which(new.levels$id=="interest-expense" & new.levels$level==2)] = "blue-light"
+new.levels$color[which(new.levels$id=="grants-expense" & new.levels$level==2)] = "blue-darker"
+new.levels$color[which(new.levels$id=="goods-and-services" & new.levels$level==2)] = "purple-dark"
+new.levels$color[which(new.levels$id=="consumption-of-fixed-capital" & new.levels$level==2)] = "orange-darker"
+
 write.csv(new.levels,"domestic-budget-level.csv",row.names=FALSE,na="")

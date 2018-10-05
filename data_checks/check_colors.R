@@ -28,13 +28,16 @@ l2s = merge(l2s,levels)
 l2s.m = melt(l2s,id.vars=c("di_id","id"))
 l2s.l = dcast(l2s.m,di_id~id)
 blanks <- apply(l2s.l[-1], 1, function(i) any(i[!is.na(i)]=="BLANK"))
+blanks_count = apply(l2s.l[-1], 1, function(i) sum(i[!is.na(i)]=="BLANK"))
 dups <- apply(l2s.l[-1], 1, function(i) any(duplicated(i[!is.na(i)])))
 concat = apply(l2s.l[-1], 1, function(i) paste(i[!is.na(i)],collapse=", "))
-totals = apply(l2s.l,2,function(i) length(i[which(!is.na(i) | i=="BLANK")]))
+totals = apply(l2s.l,2,function(i) length(i[which(!is.na(i) & i=="BLANK")]))
 l2s.l$blanks = blanks
+l2s.l$blanks_count = blanks_count
 l2s.l$dups = dups
 l2s.l$concat = concat
 l2s.l = rbind(l2s.l,totals)
 
 l2s.l = subset(l2s.l,dups|blanks)
+l2s.l = subset(l2s.l,dups>0)
 write.csv(l2s.l, "data_checks/expenditure_colors.csv",na="",row.names=F)
