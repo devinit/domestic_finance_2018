@@ -30,7 +30,7 @@ l2s.l = dcast(l2s.m,di_id~id)
 blanks <- apply(l2s.l[-1], 1, function(i) any(i[!is.na(i)]=="BLANK"))
 dups <- apply(l2s.l[-1], 1, function(i) any(duplicated(i[!is.na(i)])))
 concat = apply(l2s.l[-1], 1, function(i) paste(i[!is.na(i)],collapse=", "))
-totals = apply(l2s.l,2,function(i) length(i[!is.na(i)]))
+totals = apply(l2s.l,2,function(i) length(i[which(!is.na(i) | i=="BLANK")]))
 l2s.l$blanks = blanks
 l2s.l$dups = dups
 l2s.l$concat = concat
