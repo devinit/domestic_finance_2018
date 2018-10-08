@@ -1,14 +1,4 @@
 "di_id","year","budget.type","l1","l2","l3","l4","l5","l6","value","magnitude","child.value.sum","absdiff"
-"MR",2016,"actual","total-revenue-and-grants","grants",,,,,313,1e+08,63,250
-"MR",2015,"actual","total-revenue-and-grants","grants",,,,,283,1e+08,78,205
-"MR",2019,"proj","total-revenue-and-grants","grants",,,,,208,1e+08,37,171
-"MR",2020,"proj","total-revenue-and-grants","grants",,,,,202,1e+08,41,161
-"MR",2018,"proj","total-revenue-and-grants","grants",,,,,159,1e+08,34,125
-"MR",2022,"proj","total-revenue-and-grants","grants",,,,,166,1e+08,41,125
-"MR",2021,"proj","total-revenue-and-grants","grants",,,,,152,1e+08,41,111
-"MR",2013,"actual","total-revenue-and-grants","grants",,,,,113,1e+08,18,95
-"MR",2017,"actual","total-revenue-and-grants","grants",,,,,12.8,1e+09,4.4,8.4
-"MR",2014,"actual","total-revenue-and-grants","grants",,,,,22,1e+08,16,6
 "GA",2007,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","domestic-taxes-on-goods-and-services",,1303,1e+08,1302,1
 "GA",2008,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","domestic-taxes-on-goods-and-services",,131,1e+09,130,1
 "GA",2010,"actual","total-revenue-and-grants","revenue","nonoil-revenue","tax-revenue","taxes-on-international-trade-and-transactions",,361,1e+09,362,1
