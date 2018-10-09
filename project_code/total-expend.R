@@ -97,4 +97,7 @@ dat <- transform(dat,value.ppp.pc=value.ppp/pop)
 dat <- dat[c("di_id","year","value.ppp.pc","budget.type")]
 names(dat) <- c("di_id","year","value","budget-type")
 
+# Remove SS for 2017, 2018
+dat = subset(dat,!(di_id=="SS" & year %in% c(2017,2018)))
+
 write.csv(dat,"output/govt_spend_pc.csv",row.names=FALSE,na="")

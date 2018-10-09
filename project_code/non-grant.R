@@ -117,6 +117,10 @@ names(dat.ng) <- c("di_id","year","value","budget-type")
 dat.total <- dat[c("di_id","year","value.total.pc","budget.type")]
 names(dat.total) <- c("di_id","year","value","budget-type")
 
+# Remove SS for 2017, 2018
+dat.ng = subset(dat.ng,!(di_id=="SS" & year %in% c(2017,2018)))
+dat.total = subset(dat.total,!(di_id=="SS" & year %in% c(2017,2018)))
+
 write.csv(dat.ng,"output/non-grant-revenue-ppp-capita.csv",row.names=FALSE,na="")
 write.csv(dat.total,"output/total-revenue-ppp-capita.csv",row.names=FALSE,na="")
 
