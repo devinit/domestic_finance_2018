@@ -27,6 +27,9 @@ domestic <- read.csv("./results.csv"
 names(domestic)[names(domestic) == "iso"] <- "di_id"
 domestic$di_id = toupper(domestic$di_id)
 
+# Remove SS for 2017, 2018
+domestic = subset(domestic,!(di_id=="SS" & year %in% c(2017,2018)))
+
 # Fix small inequalities
 domestic = data.table(domestic)
 if(fix_inequalities){
