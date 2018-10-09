@@ -120,12 +120,12 @@ indicators.l$ncu.per.ppp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
 # Now that we're reordered, calculate exchange rate
 indicators.l.2011 = subset(indicators.l,year==2011)
-indicators.l.2011$ncu.per.ppp = NULL
 indicators.l.2011$year = NULL
 setnames(indicators.l.2011,"gdp.deflator","gdp.deflator.2011")
+setnames(indicators.l.2011,"ncu.per.ppp","ncu.per.ppp.2011")
 indicators.l = merge(indicators.l,indicators.l.2011)
 indicators.l$gdp.deflator.base.2011 = indicators.l$gdp.deflator.2011/indicators.l$gdp.deflator
-indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$gdp.deflator.base.2011/indicators.l$ncu.per.ppp
+indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$gdp.deflator.base.2011/indicators.l$ncu.per.ppp.2011
 
 # Drop unnecessary columns, rename, and write csv
 keep = c("WEO.Country.Code","ISO","Country","year","constant.2011.ppp.per.current.ncu")
