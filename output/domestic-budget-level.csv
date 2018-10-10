@@ -381,7 +381,6 @@
 "excise-taxes","FALSE",4,"Excise Taxes",
 "exeptional-finanancing","FALSE",3,"Exeptional finanancing",
 "exonerations","FALSE",4,"Exonerations",
-"expenditure","FALSE",1,"Expenditure",
 "expenditure-by-the-privatization-fund","FALSE",2,"Expenditure by the Privatization Fund",
 "expenditurecorrespondingtoeamarkedtaxes","FALSE",3,"Expenditure corresponding to eamarked taxes",
 "expenditures-on-goods--and-services","FALSE",3,"Expenditures on Goods  and Services",
@@ -444,7 +443,6 @@
 "fertilizer-and-seed-subsidy","FALSE",4,"Fertilizer and Seed Subsidy",
 "fertilizer-support-program","FALSE",5,"Fertilizer Support Program",
 "fiji-sugar-corporation","FALSE",2,"Fiji Sugar Corporation",
-"finance","FALSE",1,"Finance",
 "financed-by-oilforfood-program","FALSE",4,"Financed by Oil-For-Food Program",
 "financed-by-privatization","FALSE",3,"Financed by Privatization",
 "financed-by-project-loans","FALSE",4,"financed by project loans",
@@ -749,7 +747,6 @@
 "net-exceptional-financing","FALSE",2,"Net exceptional financing",
 "net-external-finance","FALSE",2,"Net External Finance",
 "net-external-financing","FALSE",2,"Net external financing",
-"net-financing-excluding-acp","FALSE",1,"Net financing, excluding ACP",
 "net-foreign-finance-of-the-central-government","FALSE",3,"Net Foreign Finance of the Central Government",
 "net-incurrence-of-domestic-liabilities","FALSE",3,"Net incurrence of domestic liabilities",
 "net-incurrence-of-financial-liabilities","FALSE",2,"Net incurrence of financial liabilities",
@@ -1170,7 +1167,6 @@
 "revenue-from-goods","FALSE",4,"Revenue from Goods",
 "revenue-from-natural-resources-and-telecoms","FALSE",4,"Revenue from natural resources and telecoms",
 "revenue-from-oil-exports","FALSE",4,"Revenue from oil exports",
-"revenues","FALSE",1,"Revenues",
 "revenues-of-special-funds-and-means","FALSE",3,"Revenues of Special Funds and Means",
 "revolving-credit","FALSE",4,"Revolving Credit",
 "road-and-special-funds","FALSE",2,"Road and Special Funds","red-light"
@@ -1371,7 +1367,7 @@
 "to-nonresidents","FALSE",4,"to Nonresidents",
 "to-residents","FALSE",4,"to Residents",
 "to-statutory-funds","FALSE",4,"To Statutory Funds",
-"total-expenditure","FALSE",1,"Total Expenditure","purple-dark"
+"total-expenditure","FALSE",1,"Total expenditure","purple-dark"
 "total-revenue-and-grants","FALSE",1,"Total revenue and grants","purple-dark"
 "tourism--8-bed-tax","FALSE",5,"Tourism ($ 8 bed tax)",
 "tourism-goods-and-services-tax","FALSE",5,"Tourism Goods and Services Tax",
