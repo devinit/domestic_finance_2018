@@ -8810,7 +8810,7 @@
       "l1": "Total Expenditure",
       "l2": "Recurrent Expenditure",
       "l3": "Federal Government Expenditure",
-      "l4": "Other",
+      "l4": "Supplementary Federal Expenditure",
       "l5": "",
       "l6": ""
     },
@@ -8818,8 +8818,8 @@
       "l1": "Total Expenditure",
       "l2": "Recurrent Expenditure",
       "l3": "Federal Government Expenditure",
-      "l4": "Other",
-      "l5": "Other",
+      "l4": "Supplementary Federal Expenditure",
+      "l5": "Other supplementary expenditure",
       "l6": ""
     }
   },
