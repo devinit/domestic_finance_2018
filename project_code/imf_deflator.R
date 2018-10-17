@@ -11,7 +11,7 @@ setwd(wd)
 base_year = 2016
 
 # Load data, removing na strings
-data_url = "https://www.imf.org/external/pubs/ft/weo/2018/01/weodata/WEOApr2018all.xls"
+data_url = "project_data/Final data government finance_121018.xlsx"
 weo = read.csv(data_url,sep="\t",na.strings=c("","n/a","--"))
 
 # Set our desired indicators with nice names
