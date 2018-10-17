@@ -36,11 +36,28 @@ if(fix_inequalities){
   message("Fixing inequalities...")
   #L6
   l6 = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & !is.na(l5) & !is.na(l6))
+  l6$dup = duplicated(l6[,c("di_id","year","type","l1","l6"),with=F])
+  message("L6 duplicates: ",sum(l6$dup))
+  l6$dup = NULL
   #L5
   l5_parents = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & !is.na(l5) & is.na(l6))
+  l5_parents$dup = duplicated(l5_parents[,c("di_id","year","type","l1","l5"),with=F])
+  message("L5 duplicates: ",sum(l5_parents$dup))
+  l5_dups = subset(l5_parents,dup)
+  l5_dups$dup = NULL
+  l5_non_dups = subset(l5_parents,!dup)
+  l5_non_dups$dup = NULL
+  l5_dups$new_l5 = paste0(l5_dups$l4," - ",l5_dups$l5)
+  l5_dups_for_merge = l5_dups[,c("di_id","year","l1","l2","l3","l4","l5","new_l5"),with=F]
+  l5_children = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & !is.na(l5) & !is.na(l6))
+  l5_children = merge(l5_children,l5_dups_for_merge,all.x=T)
+  if(typeof(l5_children$new_l5)=="NULL"){l5_children$new_l5=NA}
+  l5_children$l5[which(!is.na(l5_children$new_l5))] = l5_children$new_l5[which(!is.na(l5_children$new_l5))]
+  l5_dups$l5 = l5_dups$new_l5
+  l5_dups$new_l5 = NULL
+  l5_parents = rbind(l5_non_dups,l5_dups)
   miss_l5_parents = subset(l5_parents,is.na(value))
   non_miss_l5_parents = subset(l5_parents,!is.na(value))
-  l5_children = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & !is.na(l5) & !is.na(l6))
   
   l5_children_agg = l5_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4,l5)]
   setnames(l5_children_agg,"value","child.value.sum")
@@ -53,9 +70,26 @@ if(fix_inequalities){
   l5 = rbind(miss_l5_parents,non_miss_l5_parents)
   #L4
   l4_parents = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & is.na(l5) & is.na(l6))
+  l4_parents$dup = duplicated(l4_parents[,c("di_id","year","type","l1","l4"),with=F])
+  message("l4 duplicates: ",sum(l4_parents$dup))
+  l4_dups = subset(l4_parents,dup)
+  l4_dups$dup = NULL
+  l4_non_dups = subset(l4_parents,!dup)
+  l4_non_dups$dup = NULL
+  l4_dups$new_l4 = paste0(l4_dups$l3," - ",l4_dups$l4)
+  l4_dups$dup = duplicated(l4_dups[,c("di_id","year","type","l1","new_l4"),with=F])
+  l4_dups_for_merge = l4_dups[,c("di_id","year","l1","l2","l3","l4","new_l4"),with=F]
+  l4_dups$new_l4[which(l4_dups$dup)] = paste0(l4_dups$l2[which(l4_dups$dup)]," - ",l4_dups$l3[which(l4_dups$dup)]," - ",l4_dups$l4[which(l4_dups$dup)])
+  l4_dups$dup = NULL
+  l4_children = l5
+  l4_children = merge(l4_children,l4_dups_for_merge,all.x=T)
+  if(typeof(l4_children$new_l4)=="NULL"){l4_children$new_l4=NA}
+  l4_children$l4[which(!is.na(l4_children$new_l4))] = l4_children$new_l4[which(!is.na(l4_children$new_l4))]
+  l4_dups$l4 = l4_dups$new_l4
+  l4_dups$new_l4 = NULL
+  l4_parents = rbind(l4_non_dups,l4_dups)
   miss_l4_parents = subset(l4_parents,is.na(value))
   non_miss_l4_parents = subset(l4_parents,!is.na(value))
-  l4_children = l5
   
   l4_children_agg = l4_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3,l4)]
   setnames(l4_children_agg,"value","child.value.sum")
@@ -68,9 +102,23 @@ if(fix_inequalities){
   l4 = rbind(miss_l4_parents,non_miss_l4_parents)
   #L3
   l3_parents = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & is.na(l4) & is.na(l5) & is.na(l6))
+  l3_parents$dup = duplicated(l3_parents[,c("di_id","year","type","l1","l3"),with=F])
+  message("l3 duplicates: ",sum(l3_parents$dup))
+  l3_dups = subset(l3_parents,dup)
+  l3_dups$dup = NULL
+  l3_non_dups = subset(l3_parents,!dup)
+  l3_non_dups$dup = NULL
+  l3_dups$new_l3 = paste0(l3_dups$l2," - ",l3_dups$l3)
+  l3_dups_for_merge = l3_dups[,c("di_id","year","l1","l2","l3","new_l3"),with=F]
+  l3_children = l4
+  l3_children = merge(l3_children,l3_dups_for_merge,all.x=T)
+  if(typeof(l3_children$new_l3)=="NULL"){l3_children$new_l3=NA}
+  l3_children$l3[which(!is.na(l3_children$new_l3))] = l3_children$new_l3[which(!is.na(l3_children$new_l3))]
+  l3_dups$l3 = l3_dups$new_l3
+  l3_dups$new_l3 = NULL
+  l3_parents = rbind(l3_non_dups,l3_dups)
   miss_l3_parents = subset(l3_parents,is.na(value))
   non_miss_l3_parents = subset(l3_parents,!is.na(value))
-  l3_children = l4
   
   l3_children_agg = l3_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2,l3)]
   setnames(l3_children_agg,"value","child.value.sum")
@@ -83,9 +131,23 @@ if(fix_inequalities){
   l3 = rbind(miss_l3_parents,non_miss_l3_parents)
   #L2
   l2_parents = subset(domestic,!is.na(l1) & !is.na(l2) & is.na(l3) & is.na(l4) & is.na(l5) & is.na(l6))
+  l2_parents$dup = duplicated(l2_parents[,c("di_id","year","type","l1","l2"),with=F])
+  message("l2 duplicates: ",sum(l2_parents$dup))
+  l2_dups = subset(l2_parents,dup)
+  l2_dups$dup = NULL
+  l2_non_dups = subset(l2_parents,!dup)
+  l2_non_dups$dup = NULL
+  l2_dups$new_l2 = paste0(l2_dups$l1," - ",l2_dups$l2)
+  l2_dups_for_merge = l2_dups[,c("di_id","year","l1","l2","new_l2"),with=F]
+  l2_children = l3
+  l2_children = merge(l2_children,l2_dups_for_merge,all.x=T)
+  if(typeof(l2_children$new_l2)=="NULL"){l2_children$new_l2=NA}
+  l2_children$l2[which(!is.na(l2_children$new_l2))] = l2_children$new_l2[which(!is.na(l2_children$new_l2))]
+  l2_dups$l2 = l2_dups$new_l2
+  l2_dups$new_l2 = NULL
+  l2_parents = rbind(l2_non_dups,l2_dups)
   miss_l2_parents = subset(l2_parents,is.na(value))
   non_miss_l2_parents = subset(l2_parents,!is.na(value))
-  l2_children = l3
   
   l2_children_agg = l2_children[,.(value=sum(value,na.rm=T)),by=.(di_id,year,type,l1,l2)]
   setnames(l2_children_agg,"value","child.value.sum")
@@ -116,6 +178,7 @@ if(fix_inequalities){
 }else{
   df = data.frame(domestic)
 }
+level_df = df
 
 mult <- read.csv("weo_current_ncu_to_constant_2016_usd_conversion_factor.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
 keep = c("di_id","year","constant.2016.usd.per.current.ncu")
@@ -155,9 +218,8 @@ names(df)[names(df) == "value.ncu"] <- "value-ncu"
 names(df)[names(df) == "value.ppp"] <- "value-ppp"
 names(df)[names(df) == "type"] <- "budget-type"
 write.csv(df,"domestic.csv",row.names=FALSE,na="")
-names(df)
-df <- read.csv("./results.csv", header = TRUE,sep=",",na.strings="",check.names=FALSE,stringsAsFactors=FALSE)
-levels <- df[c(6:11)]
+
+levels <- level_df[c(6:11)]
 levels <- reshape(
   levels
   ,varying=1:6
@@ -169,18 +231,7 @@ levels <- unique(levels)[complete.cases(levels),]
 levels <- transform(levels,id=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", name))))
 levels$sectoral <- "FALSE"
 levels <- levels[c(3,4,1,2)]
-levels <- df[c(6:11)]
-levels <- reshape(
-  levels
-  ,varying=1:6
-  ,sep=""
-  ,direction="long")
-levels <- levels[c(1,2)]
-names(levels) <- c("level","name")
-levels <- unique(levels)[complete.cases(unique(levels)),]
-levels <- transform(levels,id=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", name))))
-levels$sectoral <- "FALSE"
-levels <- levels[c(3,4,1,2)]
+
 sectoral <- subset(old.levels,sectoral==TRUE)
 old.levels <- old.levels[c(1,2,3,5)]
 levels <- merge(
