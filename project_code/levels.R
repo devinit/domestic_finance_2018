@@ -228,6 +228,7 @@ levels <- reshape(
 levels <- levels[c(1,2)]
 names(levels) <- c("level","name")
 levels <- unique(levels)[complete.cases(levels),]
+levels = subset(levels,!is.na(name))
 levels <- transform(levels,id=gsub(" ","-",tolower(gsub("[^[:alnum:] ]", "", name))))
 levels$sectoral <- "FALSE"
 levels <- levels[c(3,4,1,2)]
