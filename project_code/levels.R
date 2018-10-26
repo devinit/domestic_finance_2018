@@ -49,10 +49,12 @@ if(fix_inequalities){
   l5_non_dups$dup = NULL
   l5_dups$new_l5 = paste0(l5_dups$l4," - ",l5_dups$l5)
   l5_dups_for_merge = l5_dups[,c("di_id","year","l1","l2","l3","l4","l5","new_l5"),with=F]
-  l5_children = subset(domestic,!is.na(l1) & !is.na(l2) & !is.na(l3) & !is.na(l4) & !is.na(l5) & !is.na(l6))
+  l5_children = l6
   l5_children = merge(l5_children,l5_dups_for_merge,all.x=T)
   if(typeof(l5_children$new_l5)=="NULL"){l5_children$new_l5=NA}
   l5_children$l5[which(!is.na(l5_children$new_l5))] = l5_children$new_l5[which(!is.na(l5_children$new_l5))]
+  l5_children$new_l5 = NULL
+  l6 = l5_children
   l5_dups$l5 = l5_dups$new_l5
   l5_dups$new_l5 = NULL
   l5_parents = rbind(l5_non_dups,l5_dups)
@@ -78,13 +80,15 @@ if(fix_inequalities){
   l4_non_dups$dup = NULL
   l4_dups$new_l4 = paste0(l4_dups$l3," - ",l4_dups$l4)
   l4_dups$dup = duplicated(l4_dups[,c("di_id","year","type","l1","new_l4"),with=F])
-  l4_dups_for_merge = l4_dups[,c("di_id","year","l1","l2","l3","l4","new_l4"),with=F]
   l4_dups$new_l4[which(l4_dups$dup)] = paste0(l4_dups$l2[which(l4_dups$dup)]," - ",l4_dups$l3[which(l4_dups$dup)]," - ",l4_dups$l4[which(l4_dups$dup)])
   l4_dups$dup = NULL
+  l4_dups_for_merge = l4_dups[,c("di_id","year","l1","l2","l3","l4","new_l4"),with=F]
   l4_children = l5
   l4_children = merge(l4_children,l4_dups_for_merge,all.x=T)
   if(typeof(l4_children$new_l4)=="NULL"){l4_children$new_l4=NA}
   l4_children$l4[which(!is.na(l4_children$new_l4))] = l4_children$new_l4[which(!is.na(l4_children$new_l4))]
+  l4_children$new_l4 = NULL
+  l5 = l4_children
   l4_dups$l4 = l4_dups$new_l4
   l4_dups$new_l4 = NULL
   l4_parents = rbind(l4_non_dups,l4_dups)
@@ -114,6 +118,8 @@ if(fix_inequalities){
   l3_children = merge(l3_children,l3_dups_for_merge,all.x=T)
   if(typeof(l3_children$new_l3)=="NULL"){l3_children$new_l3=NA}
   l3_children$l3[which(!is.na(l3_children$new_l3))] = l3_children$new_l3[which(!is.na(l3_children$new_l3))]
+  l3_children$new_l3 = NULL
+  l4 = l3_children
   l3_dups$l3 = l3_dups$new_l3
   l3_dups$new_l3 = NULL
   l3_parents = rbind(l3_non_dups,l3_dups)
@@ -143,6 +149,8 @@ if(fix_inequalities){
   l2_children = merge(l2_children,l2_dups_for_merge,all.x=T)
   if(typeof(l2_children$new_l2)=="NULL"){l2_children$new_l2=NA}
   l2_children$l2[which(!is.na(l2_children$new_l2))] = l2_children$new_l2[which(!is.na(l2_children$new_l2))]
+  l2_children$new_l2 = NULL
+  l3 = l2_children
   l2_dups$l2 = l2_dups$new_l2
   l2_dups$new_l2 = NULL
   l2_parents = rbind(l2_non_dups,l2_dups)
