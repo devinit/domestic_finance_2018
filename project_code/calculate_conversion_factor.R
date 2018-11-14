@@ -128,6 +128,7 @@ indicators.l$gdp.deflator.base.2011 = indicators.l$gdp.deflator.2011/indicators.
 indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$gdp.deflator.base.2011/indicators.l$ncu.per.ppp.2011
 
 # Drop unnecessary columns, rename, and write csv
+write.csv(indicators.l,"data_checks/ppp_source.csv",na="",row.names=F)
 keep = c("WEO.Country.Code","ISO","Country","year","constant.2011.ppp.per.current.ncu")
 indicators.l = indicators.l[,keep]
 names(indicators.l) = c("weo_country_code","iso_alpha_3_code","country_name","year","constant.2011.ppp.per.current.ncu")
