@@ -126,6 +126,8 @@ setnames(indicators.l.2011,"ncu.per.ppp","ncu.per.ppp.2011")
 indicators.l = merge(indicators.l,indicators.l.2011)
 indicators.l$gdp.deflator.base.2011 = indicators.l$gdp.deflator.2011/indicators.l$gdp.deflator
 indicators.l$constant.2011.ppp.per.current.ncu = indicators.l$gdp.deflator.base.2011/indicators.l$ncu.per.ppp.2011
+# Currency devaluation adjustment
+indicators.l$constant.2011.ppp.per.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>2013)] = indicators.l$constant.2011.ppp.per.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>2013)] * 10000
 
 # Drop unnecessary columns, rename, and write csv
 write.csv(indicators.l,"data_checks/ppp_source.csv",na="",row.names=F)
