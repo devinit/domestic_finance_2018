@@ -115,7 +115,7 @@ indicators.l$year = substr(indicators.l$variable,2,5)
 indicators.l$variable = NULL
 
 # Currency devaluation adjustment
-indicators.l$ncu.per.ppp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008)] = indicators.l$ncu.per.ppp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008)] * 10000
+indicators.l$ncu.per.ppp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] = indicators.l$ncu.per.ppp[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] * 10000
 # Reorder by country and year
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
 # Now that we're reordered, calculate exchange rate
