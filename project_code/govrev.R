@@ -112,7 +112,7 @@ indicators.l$variable = NULL
 # Reorder by country and year
 indicators.l = indicators.l[order(indicators.l$WEO.Country.Code,indicators.l$year),]
 
-indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] = indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008 & indicators.l$year<=2013)] * 10000
+indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008)] = indicators.l$gdp.current.ncu[which(indicators.l$ISO=="BLR" & indicators.l$year>=2008)] * 10000
 
 
 keep = c("WEO.Country.Code","ISO","Country","year","Estimates.Start.After","gdp.current.ncu")
